@@ -34,9 +34,12 @@
     }
 
     .chat{
-        margin-left: -50px;
-        margin-right: -30px;
-        width: auto;
+        display: none;
+        width: 350px;
+        left: 0;
+        position: fixed;
+        top: 50%;
+        margin-top: -2.5em;
     }
     .dropdown-submenu {
       position: relative;
@@ -60,26 +63,6 @@
       background: #27323a;
       color: #c3c1c1;
     }
-    
-    div.scrollmenu {
-    background-color: #fff;
-    overflow: auto;
-    white-space: nowrap;
-    }
-
-    div.scrollmenu a {
-        display: inline-block;
-        color: black;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-    }
-
-    div.scrollmenu a:hover {
-        background-color: #777;
-    }
-
-
   </style>
 
   <!-- Google Font -->
@@ -97,26 +80,58 @@
           <span class="sr-only">Toggle navigation</span>
         </a>
         <!-- Navbar Right Menu -->
-        <div class="collapse navbar-collapse" style="background-color: #000;">
-
-          <ul class="nav navbar-nav navbar-right">
+        <div class="nav-tabs-custom">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" data-toggle="tab">XLM</a></li>
+            <li><a href="#tab_2" data-toggle="tab">BTC</a></li>
+            <li><a href="#tab_3" data-toggle="tab">ETH</a></li>
            
-            <li style="font-size: 16px; margin-left: 30px; padding-top: 5px;"><a href="balance.php">Markets</a></li>
-
-            <li class="dropdown" style="font-size: 16px;  padding-top: 5px;">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-               Decentralize <span class="caret"></span>
+            <li class="pull-right">
+              <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+                Coinvit
+                <!-- <img style="max-width:100px; margin-top: -7px;" src="/img/transparent-white-logo.png"> -->
               </a>
-
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="#">Generate new wallet</a></li>
-                <li><a tabindex="-1" href="#">Login with your own private key</a></li>
-              </ul>
-
             </li>
-            
+            <li class="pull-right">
+              <a href="#" class="slide-toggle"><i class="fa fa-comments"></i>
+              <span>Chatroom</span>
+              </a>
+            </li>
+           
+            <li class="pull-right" style="font-size: 16px;">
+              <a href="#">
+                <i class="fa fa-moon-o"></i>    
+              </a>
+            </li>
+            <li class="pull-right" style="font-size: 16px;">
+              <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
+              </a>
+            </li>
+            <li class="pull-right dropdown" style="font-size: 16px;">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Login / Register <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="submenu" tabindex="-1" href="#">
+                     Decentralize <span class="caret"></span>
+                    </a>
 
-            <li class="dropdown" style="font-size: 16px;  padding-top: 5px;">
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Generate new wallet</a></li>
+                      <li><a tabindex="-1" href="#">Login with your own private key</a></li>
+                    </ul>
+
+                  </li>
+
+                  <li>
+                    <a href="" tabindex="-1" href="#">
+                     Centralize <span class="caret"></span>
+                    </a>
+                  </li>
+            </li>
+            <li class="pull-right dropdown" style="font-size: 16px;">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   Centralize <span class="caret"></span>
                 </a>
@@ -132,829 +147,284 @@
 
                   </li>
 
+                  <li>
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Coinvit Balance History
+                    </a>
+                  </li>
+
+                  <li>
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Open Orders + Trade History
+                    </a>
+                  </li>
+
+                  <li>
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Open Orders + Trade History
+                    </a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="submenu" tabindex="-1" href="#">
+                      ACCOUNTS <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">Profile</a></li>
+                      <li><a tabindex="-1" href="#">Password</a></li>
+                      <li><a tabindex="-1" href="#">2FA Two-Factor-Authentication</a></li>
+                      <li><a tabindex="-1" href="#">API keys</a></li>
+                      <li><a tabindex="-1" href="#">Whitelist</a></li>
+                      <li><a tabindex="-1" href="#">Notifications</a></li>
+                      <li><a tabindex="-1" href="#">Refferal Bonus</a></li>
+                    </ul>
+
+                  </li>
+
                 </ul>
             </li>
-            
-            <li style="font-size: 16px;  padding-top: 5px;">
-              <a href="">
-                  Register 
+            <li class="pull-right dropdown" style="font-size: 16px;">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Decentralize <span class="caret"></span>
               </a>
-            </li>
-           
-            <li style="font-size: 16px;  padding-top: 5px;">
-              <a href="#">
-                  Login 
-              </a>
-            </li>
-            
-            <li style="font-size: 16px;  padding-top: 5px;">
-              <a href="#">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
-              </a>
-            </li>
-            
-            <li style="font-size: 16px;  padding-top: 5px;">
-              <a href="#">
-                <i class="fa fa-moon-o"></i>    
-              </a>
-            </li>
-            
-            <li style="font-size: 16px;  padding-top: 5px;">
-              <a href="#"><i class="fa fa-wifi text-green"></i>
-              <span>Connected</span>
-              </a>
-            </li>
-                 <!--  <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Coinvit Balance History
-                   </a>
-                 </li>
-                 
-                 <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Open Orders + Trade History
-                   </a>
-                 </li>
-                 
-                 <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Open Orders + Trade History
-                   </a>
-                 </li>
-                 
-                 <li class="dropdown-submenu">
-                   <a class="submenu" tabindex="-1" href="#">
-                     ACCOUNTS <span class="caret"></span>
-                   </a>
-                 
-                   <ul class="dropdown-menu">
-                     <li><a tabindex="-1" href="#">Profile</a></li>
-                     <li><a tabindex="-1" href="#">Password</a></li>
-                     <li><a tabindex="-1" href="#">2FA Two-Factor-Authentication</a></li>
-                     <li><a tabindex="-1" href="#">API keys</a></li>
-                     <li><a tabindex="-1" href="#">Whitelist</a></li>
-                     <li><a tabindex="-1" href="#">Notifications</a></li>
-                     <li><a tabindex="-1" href="#">Refferal Bonus</a></li>
-                   </ul>
-                 
-                 </li>
-                  -->
-           
+              <ul class="dropdown-menu" style="margin-top: 5px;">
+                <li class="dropdown-submenu">
+                  <a class="submenu" tabindex="-1" href="#">
+                    Decentralize New Wallet <span class="caret"></span>
+                  </a>
 
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">BUY CRYPTO with CREDIT CARD</a></li>
+                  </ul>
+
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="submenu" tabindex="-1" href="#">
+                    Decentralize Balance <span class="caret"></span>
+                  </a>
+
+                   <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">BUY CRYPTO with CREDIT CARD</a></li>
+                  </ul>
+
+                </li>
+              </ul>
+            </li>
+            <li class="pull-right" style="font-size: 16px;"><a href="balance.php">Markets</a></li>
           </ul>
         
-        </nav>
-
-        <nav class="navbar navbar-static-top" style="background-color: #232e32;">
-
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#tab_1" data-toggle="tab">XLM</a></li>
-            <?php   
-              for ($i=0; $i < 12; $i++) { 
-             ?>
-            <li><a href="#tab_2" data-toggle="tab">BTC</a></li>
-            <li><a href="#tab_3" data-toggle="tab">ETH</a></li>
-             <?php     
-              }
-              ?>
-            </ul>
-          </div>
         </nav>
       </header>
       <!-- Left side column. contains the logo and sidebar -->
 
 
 
-        <div class="tab-content">
+        <div class="tab-content" style="margin-top: -25px;">
           <div class="tab-pane active" id="tab_1">
-             
-
-            <!-- Content Header (Page header) -->
-            <aside class="main-sidebar">
-              <!-- sidebar: style can be found in sidebar.less -->
-              <section class="sidebar">
-                <!-- Sidebar user panel -->
-                <div class="user-panel">
-                  <div class="pull-left">
-                    <img src="https://bittrexblobstorage.blob.core.windows.net/public/c41db2ef-2635-4438-a1c1-0a680c8857e1.png" style="width: 100%; max-width: 45px; height: auto;">
-                  </div>
-                  <div class="pull-left info">
-                    <p style="font-size: 28px; font-style: italic;">STELLAR</p>
-                    <b>Lumens</b>
-                  </div>
-                </div>
-                <!-- search form -->
-                <form action="#" method="get" class="sidebar-form">
-                  <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search...">
-                    <span class="input-group-btn">
-                      <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </span>
-                  </div>
-                </form>
-                <div class="sidebar" style="margin-right: 8px; margin-left: 8px;">
-                  <button type="button" class="btn btn-danger btn-block">TOKEN</button>
-                  <button type="button" class="btn btn-warning btn-block">FIAT</button>
-                </div>
-
-
-                <div class="checkbox" style="color: white; margin-right: 10px; margin-left: 15px;">
-                <label>
-                  <input type="checkbox" id="fav">
-                  Show
-                  <i class="fa fa-star text-yellow"></i>
-                  Only  
-                </label>
-                </div>
-                <!-- /.search form -->
-                <!-- sidebar menu: : style can be found in sidebar.less -->
-                <ul class="sidebar-menu" data-widget="tree">
-                  <?php
-                    for ($i=1; $i <20 ; $i++) { 
-                      echo '
-                      <li style="font-size: 15px; margin-top: 10px; margin-bottom: 10px;" class="cc" id="cc">
-                        <a href="#">
-                          <div class="pull-left">  
-                            <span class="fa fa-caret-up text-green">
-                            </span>
-                            <span>BTC</span>
-                          </div>
-                          <span> | Bitcoin | Bitcoin.com | <i class="fa fa-star-o text-yellow"></i></span>
-                        </a>
-                        
-                      </li>';
-                    }
-                  ?>
-
-                </ul>
-              </section>
-              <!-- /.sidebar -->
-
-            </aside>
-
-
-
-          <!-- Content Wrapper. Contains page content -->
-          <div class="content-wrapper">
-          <div class="row"> 
-            <div class="col-md-10"> 
-               <section>
-              <div class="box">
-
-                <div class="box-header">
-                  <div class="row">
-                    <div class="col-md-1">  
-                      <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png" width="70" height="70">
-                    </div>
-
-                    
-                    <div class="col-md-8">
-                        <div class="col-md-3">
-                          <p style="font-size: 30px;">BTC-XLM</p>
-                          <span class="info-box-text">Lumen</span>
-                        </div>
-
-                        <div class="col-md-2">
-                         <div class="description-block">
-                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                            <h5 class="description-header">$35,210.43</h5>
-                            <span class="description-text">LAST PRICE</span>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                         <div class="description-block">
-                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                            <h5 class="description-header">$35,210.43</h5>
-                            <span class="description-text">VOLUME</span>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                         <div class="description-block">
-                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                            <h5 class="description-header">$35,210.43</h5>
-                            <span class="description-text">HIGH 24H</span>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                         <div class="description-block">
-                            <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                            <h5 class="description-header">$35,210.43</h5>
-                            <span class="description-text">LOW 24H</span>
-                          </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-3">
-                      <img src="logo/logocoinvit.png" width="auto" height="80">
-                    </div>
-
-                  </div>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-            </section>
-
-            <section> 
-              <div class="box">
-                <div class="box-header with-border">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <span>Zoom : </span>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-default">6h</button>
-                        <button type="button" class="btn btn-default">12h</button>
-                        <button type="button" class="btn btn-default">24h</button>
-                        <button type="button" class="btn btn-default">2d</button>
-                        <button type="button" class="btn btn-default">4d</button>
-                        <button type="button" class="btn btn-default">1w</button>
-                        <button type="button" class="btn btn-default">2w</button>
-                        <button type="button" class="btn btn-default">1m</button>
-                        <button type="button" class="btn btn-default">All</button>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6"> 
-                    <span>Candlestick : </span>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-default">1m</button>
-                        <button type="button" class="btn btn-default">5m</button>
-                        <button type="button" class="btn btn-default">15m</button>
-                        <button type="button" class="btn btn-default">30m</button>
-                        <button type="button" class="btn btn-default">1h</button>
-                        <button type="button" class="btn btn-default">4h</button>
-                        <button type="button" class="btn btn-default">1d</button>
-                        <button type="button" class="btn btn-default">1w</button>
-                        <button type="button" class="btn btn-default">1m</button>
-                        <button type="button" class="btn btn-default">All</button>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  <!-- <div id="chartContainer" style="height: 600px; width: 100%;"></div>
-                  <div id="chartdiv" style="height: 600px; width: 100%;"></div>
-                  <div id="frameChart" style="height: 200px; width: 100%;"></div> -->
-                </div>
-                <!-- ./box-body -->
-              </div>
-              <!-- /.box -->
-            </section>
-
-            <section class="content" style="background-color: #ffffff;">
-              <div class="row"> 
-                <div class="col-md-4">  
-                  <!-- general form elements -->
-                  <div class="box box-success">
-                    <!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form" class="form-horizontal">
-                      <div class="box-body" style="height: auto;">
-                      <h3 class="box-title text-green">BUY STR</h3>
-                      <div class="text-right">
-                        <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
-                      </div>
-                        <div class="form-group" style="margin-top: 20px;">
-                          <label class="col-sm-2 control-label">AMOUNT</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control">
-                              <span class="input-group-addon">XLM</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">PRICE</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control text-right">
-                              <span class="input-group-addon">BTC</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">TOTAL</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control text-right">
-                              <span class="input-group-addon">BTC</span>
-                            </div>
-                          </div>
-                        </div>
-
-                         <div class="text-right">
-                            <button type="button" class="btn btn-default">Buy</button>
-                        </div>
-                      </div>
-                      <!-- /.box-body -->
-
-                    </form>
-                  </div>
-                  <!-- /.box -->
-                </div> 
-                <div class="col-md-4"> 
-                 <!-- general form elements -->
-                  <div class="box box-warning">
-                    <!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form" class="form-horizontal">
-                      <div class="box-body" style="height: auto;">
-                      <h3 class="box-title text-orange">LIMIT</h3>
-                      <div class="text-right">
-                        <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
-                      </div>
-                        <div class="form-group" style="margin-top: 20px;">
-                          <label class="col-sm-2 control-label">AMOUNT</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control">
-                              <span class="input-group-addon">XLM</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">PRICE</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control text-right">
-                              <span class="input-group-addon">BTC</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">TOTAL</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control text-right">
-                              <span class="input-group-addon">BTC</span>
-                            </div>
-                          </div>
-                        </div>
-
-                         <div class="text-right">
-                            <button type="button" class="btn btn-default">Buy</button>
-                        </div>
-                      </div>
-                      <!-- /.box-body -->
-
-                    </form>
-                  </div>
-                  <!-- /.box -->
-                 
-                </div> 
-                <div class="col-md-4">  
-                  <!-- general form elements -->
-                  <div class="box box-danger">
-                    <!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form" class="form-horizontal">
-                      <div class="box-body" style="height: auto;">
-                      <h3 class="box-title text-red">SELL STR</h3>
-                      <div class="text-right">
-                        <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Highest Ask</h5>
-                      </div>
-                        <div class="form-group" style="margin-top: 20px;">
-                          <label class="col-sm-2 control-label">AMOUNT</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control">
-                              <span class="input-group-addon">XLM</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">PRICE</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control text-right">
-                              <span class="input-group-addon">BTC</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">TOTAL</label>
-                          <div class="col-sm-10">  
-                            <div class="input-group">
-                              <input type="number" class="form-control text-right">
-                              <span class="input-group-addon">BTC</span>
-                            </div>
-                          </div>
-                        </div>
-
-                         <div class="text-right">
-                            <button type="button" class="btn btn-default">Sell</button>
-                        </div>
-                      </div>
-                      <!-- /.box-body -->
-
-                    </form>
-                  </div>
-                  <!-- /.box -->
-                </div>
-              </div>
-
-              <div class="row">
-                   <!-- col -->
-                   <div class="col-md-6">
-
-                    <!-- BIDS -->
-                    <table class="table table-hover" id="bid" width="100%" cellspacing="0" style="background-color: #fff;">
-                      <thead style="background-color: #f4f4f5;">
-                        <tr>
-                          <th>SUM</th>
-                          <th>TOTAL</th>
-                          <th>SIZE (XLM)</th>
-                          <th>BID (BTC)</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                       <?php
-                          for ($i=0; $i <200 ; $i++) {?> 
-                          <tr style="background: linear-gradient(to left, rgb(220, 246, 222) 94.1%, rgb(255, 255, 255) 94.1%);">
-                            <td>1.1697</td>
-                            <td>1.1697</td>
-                            <td>35252.525</td>
-                            <td>0.00003326</td>
-                            <td class="text-blue">SELL</td>
-                          </tr>   
-                        <?php
-                          }
-                       ?>
-                      </tbody>
-                    </table>   
-                    </div>
-                    <!-- End Bids -->
-                  <!-- End col-->
-
-              <!-- col -->
-              <div class="col-md-6">
-              <!-- ASKS -->
-                 <table class="table table-hover" id="ask" width="100%" cellspacing="0" style="background-color: #fff;">
-                    <thead style="background-color: #f4f4f5;">
-                      <tr>
-                        <th></th>
-                        <th>ASK (BTC)</th>
-                        <th>SIZE (XLM)</th>
-                        <th>TOTAL</th>
-                        <th>SUM</th>
-                      </tr>
-                    </thead>
-                  <tbody>
-                    <?php
-                          for ($i=0; $i <20 ; $i++) {?> 
-                    <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                    <td class="text-red">BUY</td>
-                      <td>0.00003396</td>
-                      <td>3949.866</td>
-                      <td>0.1341</td>
-                      <td>0.1341</td>
-                    </tr>  
-                        <?php
-                          }
-                       ?>
-                  </tbody>
-                </table>  
-              </div>
-              <!-- End Asks -->
-            <!-- End col -->
-      
-  
-
-
-
-            </div>
-            <!-- End Row -->
-
-
-            <div class="row">
-            <!-- col -->
-            <div class="col-md-12">
-            <h3 class="text-left" style="margin-top: 50px; margin-bottom: 30px;">My Opens Order</h3>
-            <!-- My Open Orders -->
-            <table class="table table-hover" id="oo" width="100%" cellspacing="0" style="background-color: #fff;">
-              <thead>
-                <tr style="background-color: #f4f4f5;">
-                  <th>TYPE</th>
-                  <th>PRICE</th>
-                  <th>AMOUNT</th>
-                  <th>TOTAL</th>
-                  <th>RATE/SHOP</th>
-                  <th>DATE</th>
-                  <th>ACTION</th>
-                </tr>
-              </thead>
-               <tbody>
-               <?php
-                  for ($i=0; $i <3 ; $i++) {?> 
-                  <tr>
-                    <td class="text-left text-green">BUY</td>
-                    <td class="text-right">0.00003348</td>
-                    <td class="text-right">296.38443478</td>
-                    <td class="text-right">0.00992295</td>
-                    <td class="text-right">-</td>
-                    <td><?php echo date("Y-m-d H:i:s"); ?></td>
-                    <td><a href="">Cancel</a></td>
-                  </tr>   
-                <?php
-                  }
-               ?>
-              </tbody>
-            </table>
-            <!-- My Open Orders -->
-            </div>
-            <!-- End Col -->
-
-            <!-- col -->
-            <div class="col-md-6">
-            <h3 class="text-center" style="margin-top: 50px; margin-bottom: 30px;">Market History</h3>
-            <!-- Market History -->
-            <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="background-color: #fff;">
-              <thead>
-                <tr style="background-color: #f4f4f5;">
-                  <th>DATE</th>
-                  <th>ORDER</th>
-                  <th>BID/ASK</th>
-                  <th>TOTAL (XLM)</th>
-                  <th>TOTAL (BTC)</th>
-                </tr>
-              </thead>
-               <tbody>
-               <?php
-                  for ($i=0; $i <20 ; $i++) {?> 
-                  <tr>
-                    <td>13:39:05</td>
-                    <td class="text-green">BUY</td>
-                    <td>0.00003348</td>
-                    <td>296.38443478</td>
-                    <td>0.00992295</td>
-                  </tr>   
-                <?php
-                  }
-               ?>
-              </tbody>
-            </table>
-            <!-- End Market History -->
-            </div>
-            <!-- End Col -->
-
-
-            <!-- col -->
-            <div class="col-md-6">
-            <h3 class="text-center" style="margin-top: 50px; margin-bottom: 30px;">Your Trade History</h3>
-            <!-- Market History -->
-            <table class="table table-hover" id="yth" width="100%" cellspacing="0">
-              <thead>
-                <tr style="background-color: #f4f4f5;">
-                  <th>CLOSED</th>
-                  <th>OPEN</th>
-                  <th>BID/ASK</th>
-                  <th>FILLED</th>
-                  <th>RATE</th>
-                  <th>COST</th>
-                </tr>
-              </thead>
-               <tbody>
-                <?php
-                  for ($i=0; $i <20 ; $i++) {?> 
-                  <tr>
-                    <td>13:39:05</td>
-                    <td>BUY</td>
-                    <td>0.00003348</td>
-                    <td>296.38443478</td>
-                    <td>0.00992295</td>
-                    <td>0.00992295</td>
-                  </tr>  
-                   <?php
-                  }
-               ?> 
-              </tbody>
-            </table>
-            <!-- End Market History -->
-            </div>
-            <!-- End Col -->
-            </div>
-
-        </section>
-            </div>
-
-            <div class="col-md-2">  
-            <div class="chat">
-            <a href="">
-              <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" width="100%" height="200">
-            </a>
-            <a href="">
-              <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20stellar.png" width="100%" height="200">
-            </a>
-            <!-- DIRECT CHAT -->
-              <div class="box box-danger">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Chatroom Member</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  <!-- Conversations are loaded here -->
-                  <div class="direct-chat-messages" style="height: 320px;">
-                    <!-- Message. Default to the left -->
-                    <div class="direct-chat-msg">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        Is this template really for free? That's unbelievable!
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                    <!-- Message to the right -->
-                    <div class="direct-chat-msg right">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        You better believe it!
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                    <!-- Message. Default to the left -->
-                    <div class="direct-chat-msg">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        Working with AdminLTE on a great new app! Wanna join?
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                    <!-- Message to the right -->
-                    <div class="direct-chat-msg right">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        I would love to.
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                  </div>
-                  <!--/.direct-chat-messages-->
-                </div>
-                <!-- /.box-body -->
-                <div class="box-footer">
-                  <form action="#" method="post">
-                    <div class="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                      <span class="input-group-btn">
-                            <button type="button" class="btn btn-danger btn-flat">Send</button>
-                          </span>
-                    </div>
-                  </form>
-                </div>
-                <!-- /.box-footer-->
-                <a class="twitter-timeline" data-height="500" href="https://twitter.com/StellarLumens?ref_src=twsrc%5Etfw" style="margin-left: -30px;">Tweets by StellarLumens</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-             
-              <a href="">
-                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" width="100%" height="200">
-              </a>
-              <a href="">
-                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20stellar.png" width="100%" height="200">
-              </a>
-
-
-              <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title"><b>NOTICES</b></h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <ul class="products-list product-list-in-box">
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Samsung TV
-                      <span class="label label-warning pull-right">$1800</span></a>
-                    <span class="product-description">
-                          Samsung 32" 1080p 60Hz LED Smart HDTV.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Bicycle
-                      <span class="label label-info pull-right">$700</span></a>
-                    <span class="product-description">
-                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-                    <span class="product-description">
-                          Xbox One Console Bundle with Halo Master Chief Collection.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">PlayStation 4
-                      <span class="label label-success pull-right">$399</span></a>
-                    <span class="product-description">
-                          PlayStation 4 500GB Console (PS4)
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-              </ul>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer text-center">
-              <a href="javascript:void(0)" class="uppercase">View All Products</a>
-            </div>
-            <!-- /.box-footer -->
-          </div>
-              </div>
-              <!--/.direct-chat --> 
-
-
-            </div>
-
-
-
-            </div>
-            <!-- End col-md-2 -->
-
-          </div>
-          <!-- End row -->
            
+          <section>
+          <div class="row" style="background-color: #d92b60; color: #fff; height: 10em;">
 
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <p style="font-size: 50px;">Bitcoin (BTC)</p>
+            </div>
+            
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <div class="row"> 
+                <div class="col-md-6">  
+                  <p style="font-size: 30px;">LAST PRICE:</p>
+                </div>
+                <div class="col-md-6">  
+                  <p style="font-size: 30px;">0.99600000 USD</p>
+                </div>
+              </div>
 
-         <!-- Add the sidebar's background. This div must be placed
-          immediately after the control sidebar -->
-          <div class="control-sidebar-bg"></div>
+              <div class="row"> 
+                <div class="col-md-6">  
+                  <p style="font-size: 30px;">24hr Volume:</p>
+                </div>
+                <div class="col-md-6">  
+                  <p style="font-size: 30px;">1295170.80 USD</p>
+                </div>
+              </div>
+            </div>
 
-        </div>
-        <!-- ./wrapper -->
+            <div class="col-md-3 col-sm-4 col-xs-4">
+                <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png"
+                width="100" height="100">
+            </div>
 
-        <footer class="main-footer">
+          </div>
+            <div class="info-box">
+
+              <div class="info-box-content">
+
+                <h3 style="margin-top: 50px; margin-bottom: 20px;">USDT MARKET</h3>
+                <!-- Market History -->
+                <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="background-color: #fff;">
+                  <thead>
+                    <tr style="background-color: #f4f4f5;">
+                      <th>MARKET</th>
+                      <th>CURRENCY</th>
+                      <th>VOLUME</th>
+                      <th>% CHANGE</th>
+                      <th>LAST PRICE</th>
+                      <th>24HR HIGH</th>
+                      <th>24HR LOW</th>
+                      <th>% SPREAD</th>
+                      <th>ADDED</th>
+                    </tr>
+                  </thead>
+                   <tbody>
+                   <?php
+                      for ($i=0; $i <20 ; $i++) {?> 
+                      <tr>
+                        <td>USD-BTC</td>
+                        <td>Bitcoin</td>
+                        <td>1286578.70</td>
+                        <td class="text-red">-0.1</td>
+                        <td>7154.88900000</td>
+                        <td>7325.00000000</td>
+                        <td>7011.00000000</td>
+                        <td>0.0</td>
+                        <td>05/31/2018</td>
+                      </tr>   
+                    <?php
+                      }
+                   ?>
+                  </tbody>
+                </table>
+                <!-- End Market History -->
+
+                <h3 style="margin-top: 50px; margin-bottom: 20px;">BITCOIN MARKET</h3>
+                <!-- Market History -->
+                <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="background-color: #fff;">
+                  <thead>
+                    <tr style="background-color: #f4f4f5;">
+                      <th>MARKET</th>
+                      <th>CURRENCY</th>
+                      <th>VOLUME</th>
+                      <th>% CHANGE</th>
+                      <th>LAST PRICE</th>
+                      <th>24HR HIGH</th>
+                      <th>24HR LOW</th>
+                      <th>% SPREAD</th>
+                      <th>ADDED</th>
+                    </tr>
+                  </thead>
+                   <tbody>
+                   <?php
+                      for ($i=0; $i <20 ; $i++) {?> 
+                      <tr>
+                        <td>USD-BTC</td>
+                        <td>Bitcoin</td>
+                        <td>1286578.70</td>
+                        <td class="text-red">-0.1</td>
+                        <td>7154.88900000</td>
+                        <td>7325.00000000</td>
+                        <td>7011.00000000</td>
+                        <td>0.0</td>
+                        <td>05/31/2018</td>
+                      </tr>   
+                    <?php
+                      }
+                   ?>
+                  </tbody>
+                </table>
+                <!-- End Market History -->
+
+                <h3 style="margin-top: 50px; margin-bottom: 20px;">ETHEREUM MARKET</h3>
+                <!-- Market History -->
+                <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="background-color: #fff;">
+                  <thead>
+                    <tr style="background-color: #f4f4f5;">
+                      <th>MARKET</th>
+                      <th>CURRENCY</th>
+                      <th>VOLUME</th>
+                      <th>% CHANGE</th>
+                      <th>LAST PRICE</th>
+                      <th>24HR HIGH</th>
+                      <th>24HR LOW</th>
+                      <th>% SPREAD</th>
+                      <th>ADDED</th>
+                    </tr>
+                  </thead>
+                   <tbody>
+                   <?php
+                      for ($i=0; $i <20 ; $i++) {?> 
+                      <tr>
+                        <td>USD-BTC</td>
+                        <td>Bitcoin</td>
+                        <td>1286578.70</td>
+                        <td class="text-red">-0.1</td>
+                        <td>7154.88900000</td>
+                        <td>7325.00000000</td>
+                        <td>7011.00000000</td>
+                        <td>0.0</td>
+                        <td>05/31/2018</td>
+                      </tr>   
+                    <?php
+                      }
+                   ?>
+                  </tbody>
+                </table>
+                <!-- End Market History -->
+
+                <h3 style="margin-top: 50px; margin-bottom: 20px;">USDT MARKET</h3>
+                <!-- Market History -->
+                <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="background-color: #fff;">
+                  <thead>
+                    <tr style="background-color: #f4f4f5;">
+                      <th>MARKET</th>
+                      <th>CURRENCY</th>
+                      <th>VOLUME</th>
+                      <th>% CHANGE</th>
+                      <th>LAST PRICE</th>
+                      <th>24HR HIGH</th>
+                      <th>24HR LOW</th>
+                      <th>% SPREAD</th>
+                      <th>ADDED</th>
+                    </tr>
+                  </thead>
+                   <tbody>
+                   <?php
+                      for ($i=0; $i <20 ; $i++) {?> 
+                      <tr>
+                        <td>USD-BTC</td>
+                        <td>Bitcoin</td>
+                        <td>1286578.70</td>
+                        <td class="text-red">-0.1</td>
+                        <td>7154.88900000</td>
+                        <td>7325.00000000</td>
+                        <td>7011.00000000</td>
+                        <td>0.0</td>
+                        <td>05/31/2018</td>
+                      </tr>   
+                    <?php
+                      }
+                   ?>
+                  </tbody>
+                </table>
+                <!-- End Market History -->
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </section>
+         
+        <footer>
+        <div class="container"> 
           <div class="row">
             <div class="col-md-3">
-              <h1>ABOUT COINVIT</h1>
+              <h2 style="color: white;">ABOUT COINVIT</h2>
               <h4><a href="#">Contact Us</a></h4>
               <h4><a href="#">Fees</a></h4>
               <h4><a href="#">Privacy Policy</a></h4>
               <h4><a href="#">Terms of Use</a></h4>
             </div>
             <div class="col-md-3">
-              <h1>SUPPORT</h1>
+              <h2 style="color: white;">SUPPORT</h2>
               <h4><a href="#">++ Contact Support ++</a></h4>
               <h4><a href="#">Guides</a></h4>
               <h4><a href="#">++ SUBMIT A TOKEN ++</a></h4>
@@ -962,7 +432,7 @@
               <h4><a href="#">API Documentation</a></h4>
             </div>
             <div class="col-md-3">
-              <h1>NEWS</h1>
+              <h2 style="color: white;">NEWS</h2>
               <h4><a href="#">Press Release</a></h4>
               <h4><a href="#">Follow us on Twitter</a></h4>
             </div>
@@ -1005,6 +475,7 @@
 
             </div>
           </div>
+        </div>
         </footer>
         
         
@@ -1351,29 +822,9 @@ var chart = AmCharts.makeChart( "chartdiv", {
   // DataTables
   $(function () {
     
-    $('#bid').DataTable({
-      'paging'      : true,
-      'searching'   : false,
-      'info'        : false,
-      'lengthChange': false,
-      'pagingType'  : 'full_numbers',
-      'responsive'  : true,
-      "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-      'autoWidth'   : false
-    })
-    $('#ask').DataTable({
-      'paging'      : true,
-      'searching'   : false,
-      'info'        : false,
-      'lengthChange': false,
-       'pagingType'  : 'full_numbers',
-      'responsive'  : true,
-      "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-      'autoWidth'   : false
-    })
     $('#mh').DataTable({
       'paging'      : true,
-      'searching'   : false,
+      'searching'   : true,
       'info'        : false,
       'ordering'    : true,
       'lengthChange': false,
@@ -1382,29 +833,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
       "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
       'autoWidth'   : false
     })
-    $('#oo').DataTable({
-      'paging'      : true,
-      'searching'   : false,
-      'info'        : false,
-      'ordering'    : true,
-      'lengthChange': false,
-       'pagingType'  : 'full_numbers',
-      'responsive'  : true,
-      "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-      'autoWidth'   : false
-    })
-    $('#yth').DataTable({
-      'paging'      : true,
-      'searching'   : false,
-      'info'        : false,
-      'ordering'    : true,
-      'lengthChange': false,
-       'pagingType'  : 'full_numbers',
-      'responsive'  : true,
-      "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-      'autoWidth'   : false
-    })
-
+    
   })
 
 </script>
@@ -1682,6 +1111,11 @@ function formatNumber(val, chart, precision) {
     });
 
 
+    $(".slide-toggle").click(function(){
+    $(".chat").animate({
+      width: "toggle"
+    });
+  });
 
   $(document).ready(function(){
     $('.dropdown-submenu a.submenu').on("click", function(e){

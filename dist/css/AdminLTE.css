@@ -87,7 +87,7 @@ body {
 }
 .content-wrapper {
   min-height: 100%;
-  background-color: #ecf0f5;
+  background-color: #fff;
   z-index: 800;
 }
 .main-footer {
@@ -162,7 +162,7 @@ h6,
 }
 /* General Links */
 a {
-  color: #d92b60;
+  color: #e0e0e0;
 }
 a:hover,
 a:active,
