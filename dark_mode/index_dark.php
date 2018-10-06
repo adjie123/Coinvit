@@ -7,18 +7,18 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="../bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,12 +50,16 @@
   }
 
     .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
-      background-color: #373435;
-    border-color: #373435;
+      background-color: #9ea29e;
+      border-color: #9ea29e;
+    }
+
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+      background-color: #9ea29e;
     }
 
     body{
-      background-color: #fff;
+      background-color: #000;
       width: 1790px;
       overflow-x: scroll;
     }
@@ -115,6 +119,20 @@
 
     .view-pager{
       margin-top: -20px;
+    }
+
+    .box-header{
+      background-color: #2B3441;
+      color: #fff;
+    }
+
+    .box{
+      background-color: #2B3441;
+      color: #fff;
+    }
+
+    .products-list > .item {
+      background: #2b3341;
     }
 
   </style>
@@ -291,7 +309,23 @@
               <section>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree"  id="asset">
-                  <?php
+                  <li class="cc" id="cc">
+                    <a href="#" style="height: 60px;">
+                        <i style="font-size: 18px;">XLM</i>
+                        <span style="font-size: 12px; font-color: grey;">Stellar | Bitcoin.com</span>
+                        <span class="pull-right-container">
+                          <i class="fa fa-star-o text-yellow pull-right"></i>
+                        </span>
+                        <br>
+
+                          <i class="text-red">0.09890</i>
+                          <span class="text-red" style="margin-left: 5px;"> -37.278%</span>
+                          <span style="margin-left: 5px;">297.0876</span>
+                    </a>
+                    
+                  </li>
+
+                <?php
                     for ($i=1; $i <20 ; $i++) { 
                       echo '
                        <li class="cc" id="cc">
@@ -311,6 +345,7 @@
                         </li>';
                     }
                   ?>
+
                   <?php
                     for ($i=1; $i <20 ; $i++) { 
                       echo '
@@ -327,17 +362,6 @@
                       </li>';
                     }
                   ?>
-                <li style="font-size: 15px; margin-top: 10px; margin-bottom: 10px;" class="cc" id="cc">
-                  <a href="#">
-                    <div class="pull-left">  
-                      <span class="fa fa-caret-up text-green">
-                      </span>
-                      <span>XLM</span>
-                    </div>
-                    <span> | Stellar | Bitcoin.com | <i class="fa fa-star-o text-yellow"></i></span>
-                  </a>
-                  
-                </li>
                 </ul>
               <!-- /.sidebar -->
               <div class="" style="margin-right: 8px; margin-left: 8px;">
@@ -359,8 +383,8 @@
 
           <!-- Content Wrapper. Contains page content -->
           <div class="content-wrapper"> 
-          <section style="background-color: #fff; margin-top: 40px; width: 2000px;">
-            <div style="float: left; width: 1250px; background-color: #fff; height: 2570px;"> 
+          <section style="background-color: #2B3441; margin-top: 40px; width: 2000px;">
+            <div style="float: left; width: 1250px; background-color: #2B3441; height: 2570px;"> 
               <div class="box">
 
                 <div class="box-header">
@@ -407,7 +431,7 @@
 
                     </div>
                     <div class="col-md-2">
-                      <img src="logo/logocoinvit.png" width="auto" height="60">
+                      <img src="../logo/logocoinvit.png" width="auto" height="60">
                     </div>
 
                   </div>
@@ -619,8 +643,8 @@
                    <div class="col-md-6">
 
                     <!-- BIDS -->
-                    <table class="table table-hover" id="bid" width="100%" cellspacing="0" style="background-color: #fff;">
-                      <thead style="background-color: #f4f4f5;">
+                    <table class="table" id="bid" width="100%" cellspacing="0" style="color: #fff;">
+                      <thead>
                         <tr>
                           <th>SUM</th>
                           <th>TOTAL</th>
@@ -632,7 +656,7 @@
                       <tbody>
                        <?php
                           for ($i=0; $i <200 ; $i++) {?> 
-                          <tr style="background: linear-gradient(to left, rgb(220, 246, 222) 94.1%, rgb(255, 255, 255) 94.1%);">
+                          <tr style="background: linear-gradient(to left, rgb(192, 232, 195) 94.1%, rgb(43, 51, 65) 94.1%);">
                             <td>1.1697</td>
                             <td>1.1697</td>
                             <td>35252.525</td>
@@ -651,8 +675,8 @@
               <!-- col -->
               <div class="col-md-6">
               <!-- ASKS -->
-                 <table class="table table-hover" id="ask" width="100%" cellspacing="0" style="background-color: #fff;">
-                    <thead style="background-color: #f4f4f5;">
+                 <table class="table" id="ask" width="100%" cellspacing="0" style="color: #fff;">
+                    <thead>
                       <tr>
                         <th></th>
                         <th>ASK (BTC)</th>
@@ -664,7 +688,7 @@
                   <tbody>
                     <?php
                           for ($i=0; $i <20 ; $i++) {?> 
-                    <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                    <tr style="background: linear-gradient(to right, rgb(221, 165, 168) 89.7%, rgb(43, 51, 65) 89.7%);">
                     <td class="text-red">BUY</td>
                       <td>0.00003396</td>
                       <td>3949.866</td>
@@ -691,11 +715,11 @@
             <div class="row">
             <!-- col -->
             <div class="col-md-12">
-            <h3 class="text-left" style="margin-bottom: 8px; padding-left: 8px;">My Opens Order</h3>
+            <h3 class="text-left" style="margin-bottom: 8px; padding-left: 8px; color: #fff;">My Opens Order</h3>
             <!-- My Open Orders -->
-            <table class="table table-hover" id="oo" width="100%" cellspacing="0" style="background-color: #fff;">
+            <table class="table table-hover" id="oo" width="100%" cellspacing="0" style="color: #fff;">
               <thead>
-                <tr style="background-color: #f4f4f5;">
+                <tr>
                   <th>TYPE</th>
                   <th>PRICE</th>
                   <th>AMOUNT</th>
@@ -728,11 +752,11 @@
 
             <!-- col -->
             <div class="col-md-6">
-            <h3 class="text-center" style="margin-bottom: 8px;">Market History</h3>
+            <h3 class="text-center" style="margin-bottom: 8px; color: #fff;">Market History</h3>
             <!-- Market History -->
-            <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="background-color: #fff;">
+            <table class="table table-hover" id="mh" width="100%" cellspacing="0" style="color: #fff;">
               <thead>
-                <tr style="background-color: #f4f4f5;">
+                <tr>
                   <th>DATE</th>
                   <th>ORDER</th>
                   <th>BID/ASK</th>
@@ -762,11 +786,11 @@
 
             <!-- col -->
             <div class="col-md-6">
-            <h3 class="text-center" style="margin-bottom: 8px;">Your Trade History</h3>
+            <h3 class="text-center" style="margin-bottom: 8px; color: #fff;">Your Trade History</h3>
             <!-- Market History -->
-            <table class="table table-hover" id="yth" width="100%" cellspacing="0" style="background-color: #fff;">
+            <table class="table table-hover" id="yth" width="100%" cellspacing="0"  style="color: #fff;">
               <thead>
-                <tr style="background-color: #f4f4f5;">
+                <tr>
                   <th>CLOSED</th>
                   <th>OPEN</th>
                   <th>BID/ASK</th>
@@ -780,7 +804,7 @@
                   for ($i=0; $i <20 ; $i++) {?> 
                   <tr>
                     <td>13:39:05</td>
-                    <td>BUY</td>
+                    <td class="text-green">BUY</td>
                     <td>0.00003348</td>
                     <td>296.38443478</td>
                     <td>0.00992295</td>
@@ -821,7 +845,7 @@
                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         Is this template really for free? That's unbelievable!
@@ -837,7 +861,7 @@
                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         You better believe it!
@@ -853,7 +877,7 @@
                         <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         Working with AdminLTE on a great new app! Wanna join?
@@ -869,7 +893,7 @@
                         <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         I would love to.
@@ -916,64 +940,29 @@
             <!-- /.box-header -->
             <div class="box-body">
               <ul class="products-list product-list-in-box">
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Samsung TV
-                      <span class="label label-warning pull-right">$1800</span></a>
-                    <span class="product-description">
-                          Samsung 32" 1080p 60Hz LED Smart HDTV.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Bicycle
-                      <span class="label label-info pull-right">$700</span></a>
-                    <span class="product-description">
-                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-                    <span class="product-description">
-                          Xbox One Console Bundle with Halo Master Chief Collection.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">PlayStation 4
-                      <span class="label label-success pull-right">$399</span></a>
-                    <span class="product-description">
-                          PlayStation 4 500GB Console (PS4)
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
+                <?php
+                  for ($i=0; $i < 5 ; $i++) { ?>
+                    
+                    <li class="item">
+                      <div class="product-img">
+                        <img src="../dist/img/default-50x50.gif" alt="Product Image">
+                      </div>
+                      <div class="product-info">
+                        <a href="javascript:void(0)" class="product-title">Samsung TV
+                          <span class="label label-warning pull-right">$1800</span></a>
+                        <span class="product-description">
+                              Samsung 32" 1080p 60Hz LED Smart HDTV.
+                            </span>
+                      </div>
+                    </li>
+                    <!-- /.item -->
+                <?php  
+                }
+                ?>
+                
               </ul>
             </div>
             <!-- /.box-body -->
-            <div class="box-footer text-center">
-              <a href="javascript:void(0)" class="uppercase">View All Products</a>
-            </div>
-            <!-- /.box-footer -->
           </div>
               </div>
               <!--/.direct-chat --> 
@@ -1057,7 +1046,7 @@
         <!-- End Tab_1 -->
 
         <div class="tab-pane" id="tab_2" style="background-color: white;">
-          <table id="datatable" class="display  table table-hover" width="100%" cellspacing="0" style="background-color: #fff;">
+          <table id="datatable" class="display  table table-hover" width="100%" cellspacing="0" style="color: #fff;">
           <thead>
             <tr>
               <th>Date</th>
@@ -1291,38 +1280,27 @@
 <!-- Canvas JS -->
 <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- DataTables -->
-<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="../dist/js/adminlte.min.js"></script>
 <!-- Sparkline -->
-<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-<!-- jvectormap  -->
-<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="../bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- SlimScroll Vertical-->
-<script src="bower_components/jquery-slimscroll/vertical/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/vertical/jquery.slimscroll.min.js"></script>
 <!-- ChartJS -->
-<script src="bower_components/chart.js/Chart.js"></script>
+<script src="../bower_components/chart.js/Chart.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard2.js"></script>
+<script src="../dist/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="../dist/js/demo.js"></script>
 
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-<script src="https://www.amcharts.com/lib/3/serial.js"></script>
-<script src="https://www.amcharts.com/lib/3/amstock.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
 <script type="text/javascript">
   var chartData = [];
