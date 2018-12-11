@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Fixed Column -->
+  <link rel="stylesheet" type="text/css" href="dist/css/column-fixed.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -37,32 +39,127 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  
+  <style type="text/css">
+  .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #ffffff;
+  }
+  .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a {
+    color: #181717;
+    background: #dde0e1;
+  }
+  .text-white{
+    color: #fff 
+  }
+  .info-box-header{
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: text-top;
+  }
+  .bold-font{
+    font-weight: bold;
+  }
+  .content-wrapper{
+    background-color: #fff;
+  }
+  .middle-box{
+    margin-top: 55px;
+  }
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+  <header class="main-header">
+      <nav>
+        <!-- Navbar Right Menu -->
+        <div class="collapse navbar-collapse" style="background-color: #000;">
 
+          <ul class="nav navbar-nav navbar-right">
+           
+            <li><a href="balance.php" class="text-white">Markets</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
+               Decentralize <span class="caret"></span>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Generate new wallet</a></li>
+                <li><a tabindex="-1" href="#">Login with your own private key</a></li>
+              </ul>
+
+            </li>
+            
+
+            <li class="dropdown">
+                <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
+                  Centralize <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="submenu" tabindex="-1" href="#">
+                      Coinvit Deposit Withdrawal <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">BUY CRYPTO with CREDIT CARD</a></li>
+                    </ul>
+
+                  </li>
+
+                </ul>
+            </li>
+            
+            
+            <li>
+              <a href="#" class="text-white">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="text-white">
+                <i class="fa fa-moon-o"></i>    
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" data-toggle="modal" data-target="#modal-lr" class="text-white">
+                  Login / Register 
+              </a>
+            </li>
+            
+            <li>
+              <a href="#">
+                <i class="fa fa-wifi text-green"></i>    
+              </a>
+            </li>
+
+          </ul>
+        
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
   
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree" style="margin: 8px; color: white;">
-      	<span style="color: grey; font-size: 20px;">SUMMARY</span>
-        <li class="active treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
-          <a href="#">
+      <ul class="sidebar-menu"  style="margin: 8px; color: white;">
+        <span style="color: grey; font-size: 20px;">SUMMARY</span>
+        <li class="treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
+          <a href="myactivity.php">
             <span>My Activity</span>
           </a>
         </li>
 
         <span style="color: grey; font-size: 20px;">ACCOUNT</span>
         <li class="treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
-          <a href="#">
+          <a href="myprofile.php">
             <span>My Profile</span>
           </a>
         </li>
-        <li class="treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
-          <a href="#">
+        <li class="active treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
+          <a href="idverif.php">
             <span>Identity Verification</span>
           </a>
         </li>
@@ -78,36 +175,41 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header" style="background-color: #fff; padding-bottom: 30px;">
-      <h1>
-        Accounts
-        <small>ID Verification</small>
-      </h1>
-    </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="callout callout-success" style="margin-bottom: 0!important;">
-        <h4>Note:</h4>
-        Verifying your identity improves the security of your account. The next step in the process is to submit the materials needed to verify your identity. While driver’s licenses and ID cards are permitted, we recommend you use passports to help expedite the process. 
-      </div>
-       <div class="register-box">
-        <p>
-          Tips for successful verification:
-Take a fresh selfie and ensure that nothing is blocking the full view of your face
-Do not use the same image from your identification documents
-Do not use a professional profile picture
-Do not manipulate the image of your identification in anyway, including the addition of watermarks or blacking out certain information
-Do not crop the image of your ID such that any portion of the ID is removed, including edges
-        </p>
-        <div class="row">
-          <div class="col-md-8">
-            <button type="submit" class="btn btn-primary btn-lg form-control" style="padding-bottom: 30px;">Start ID Verification</button>
-          </div>
-          <!-- /.col -->
+      <div class="box">
+        <div class="box-header">    
+          <h1>
+            Account
+            <small>Indentity Verification</small>
+          </h1>
         </div>
-    </div>
+        <div class="box-body">
+          <div class="callout callout-success" style="margin-bottom: 0!important;">
+            <h4>Note:</h4>
+            Verifying your identity improves the security of your account. The next step in the process is to submit the materials needed to verify your identity. While driver’s licenses and ID cards are permitted, we recommend you use passports to help expedite the process. 
+          </div>
+           <div class="register-box">
+            <p>
+              Tips for successful verification:
+    Take a fresh selfie and ensure that nothing is blocking the full view of your face
+    Do not use the same image from your identification documents
+    Do not use a professional profile picture
+    Do not manipulate the image of your identification in anyway, including the addition of watermarks or blacking out certain information
+    Do not crop the image of your ID such that any portion of the ID is removed, including edges
+            </p>
+            <div class="row">
+              <div class="col-md-8">
+                <button type="submit" class="btn btn-primary btn-lg form-control" style="padding-bottom: 30px;">Start ID Verification</button>
+              </div>
+              <!-- /.col -->
+            </div>
+           </div>
+      <!-- Box-Content -->
+      </div>
+      <!-- Box-->
+     
 
     </section>
     <!-- /.content -->

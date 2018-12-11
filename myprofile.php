@@ -38,7 +38,16 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <style type="text/css">
-   
+  .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #ffffff;
+  }
+  .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a {
+    color: #181717;
+    background: #dde0e1;
+  }
+  .text-white{
+    color: #fff 
+  }
   </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -50,10 +59,10 @@
 
           <ul class="nav navbar-nav navbar-right">
            
-            <li><a href="balance.php">Markets</a></li>
+            <li><a href="balance.php" class="text-white">Markets</a></li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
                Decentralize <span class="caret"></span>
               </a>
 
@@ -66,7 +75,7 @@
             
 
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
                   Centralize <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -86,19 +95,19 @@
             
             
             <li>
-              <a href="#">
+              <a href="#" class="text-white">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
               </a>
             </li>
             
             <li>
-              <a href="#">
+              <a href="#" class="text-white">
                 <i class="fa fa-moon-o"></i>    
               </a>
             </li>
             
             <li>
-              <a href="#" data-toggle="modal" data-target="#modal-lr">
+              <a href="#" data-toggle="modal" data-target="#modal-lr" class="text-white">
                   Login / Register 
               </a>
             </li>
@@ -108,42 +117,6 @@
                 <i class="fa fa-wifi text-green"></i>    
               </a>
             </li>
-                 <!--  <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Coinvit Balance History
-                   </a>
-                 </li>
-                 
-                 <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Open Orders + Trade History
-                   </a>
-                 </li>
-                 
-                 <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Open Orders + Trade History
-                   </a>
-                 </li>
-                 
-                 <li class="dropdown-submenu">
-                   <a class="submenu" tabindex="-1" href="#">
-                     ACCOUNTS <span class="caret"></span>
-                   </a>
-                 
-                   <ul class="dropdown-menu">
-                     <li><a tabindex="-1" href="#">Profile</a></li>
-                     <li><a tabindex="-1" href="#">Password</a></li>
-                     <li><a tabindex="-1" href="#">2FA Two-Factor-Authentication</a></li>
-                     <li><a tabindex="-1" href="#">API keys</a></li>
-                     <li><a tabindex="-1" href="#">Whitelist</a></li>
-                     <li><a tabindex="-1" href="#">Notifications</a></li>
-                     <li><a tabindex="-1" href="#">Refferal Bonus</a></li>
-                   </ul>
-                 
-                 </li>
-                  -->
-           
 
           </ul>
         
@@ -155,22 +128,22 @@
   <aside class="main-sidebar">
     
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree" style="margin: 8px; color: white;">
+      <ul class="sidebar-menu" style="margin: 8px; color: white;">
       	<span style="color: grey; font-size: 20px;">SUMMARY</span>
-        <li class="active treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
-          <a href="#">
+        <li class="treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
+          <a href="myactivity.php">
             <span>My Activity</span>
           </a>
         </li>
 
         <span style="color: grey; font-size: 20px;">ACCOUNT</span>
-        <li class="treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
-          <a href="#">
+        <li class="active treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
+          <a href="myprofile.php">
             <span>My Profile</span>
           </a>
         </li>
         <li class="treeview"  style="font-size: 15px; margin-left: 10px; margin: 8px;">
-          <a href="#">
+          <a href="idverif.php">
             <span>Identity Verification</span>
           </a>
         </li>
