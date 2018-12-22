@@ -92,7 +92,7 @@
     
   
     div.scrollmenu {
-    background-color: #232e32;
+      background-color: #232e32;
     }
 
     div.scrollmenu a {
@@ -197,6 +197,9 @@
                 <i class="fa fa-wifi text-green"></i>    
               </a>
             </li>
+            <li>
+              <button type="button" class="btn btn-warning btn-lg btn-block" style="height: 52px;">Self Advertise</button>
+            </li>
                  <!--  <li>
                    <a role="menuitem" tabindex="-1" href="#">
                      Coinvit Balance History
@@ -261,9 +264,9 @@
               <!-- Sidebar user panel -->
                 <div class="user-panel">
                   <div class="pull-left">
-                    <img src="https://bittrexblobstorage.blob.core.windows.net/public/c41db2ef-2635-4438-a1c1-0a680c8857e1.png" style="width: 100%; max-width: 45px; height: auto;">
+                    <img class="sidebar-toggle" data-toggle="push-menu" role="button" src="https://bittrexblobstorage.blob.core.windows.net/public/c41db2ef-2635-4438-a1c1-0a680c8857e1.png" style="width: 100%; max-width: 45px; height: auto;">
                   </div>
-                  <div class="pull-left info">
+                  <div class="pull-left info">  
                     <p style="font-size: 28px; font-style: italic;">STELLAR</p>
                     <b>Lumens</b>
                   </div>
@@ -291,6 +294,10 @@
               </form>
               <!-- /.search form -->
               <section>
+              <div class="" style="margin-right: 8px; margin-left: 8px;">
+                <button type="button" class="btn btn-danger btn-block">TOKEN</button>
+                <button type="button" class="btn btn-warning btn-block">FIAT</button>
+              </div>
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree"  id="asset">
                   <?php
@@ -342,10 +349,6 @@
                 </li>
                 </ul>
               <!-- /.sidebar -->
-              <div class="" style="margin-right: 8px; margin-left: 8px;">
-                <button type="button" class="btn btn-danger btn-block">TOKEN</button>
-                <button type="button" class="btn btn-warning btn-block">FIAT</button>
-              </div>
               </section>
 
             </aside>
@@ -441,141 +444,8 @@
 
                      <div class="box-body">
                        <iframe src="http://127.0.0.1:9090/" style="height: 600px; width: 100%;"></iframe>
-
-                       <!--Three Column Layout-->
-                        <div class="column-3-left-bsl box box-success">
-                          <form role="form" class="form-horizontal">
-                          <div class="box-body" style="height: auto;">
-                          <h3 class="box-title text-green">BUY STR</h3>
-                          <div class="text-right">
-                            <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
-                          </div>
-                            <div class="form-group" style="margin-top: 20px;">
-                              <label class="col-sm-2 control-label">AMOUNT</label>
-                              <div class="col-sm-10">  
-                                <div class="input-group">
-                                  <input type="number" class="form-control">
-                                  <span class="input-group-addon">XLM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="col-sm-2 control-label">PRICE</label>
-                              <div class="col-sm-10">  
-                                <div class="input-group">
-                                  <input type="number" class="form-control text-right">
-                                  <span class="input-group-addon">BTC</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="col-sm-2 control-label">TOTAL</label>
-                              <div class="col-sm-10">  
-                                <div class="input-group">
-                                  <input type="number" class="form-control text-right">
-                                  <span class="input-group-addon">BTC</span>
-                                </div>
-                              </div>
-                            </div>
-
-                             <div class="text-right">
-                                <button type="button" class="btn btn-default">Buy</button>
-                            </div>
-                          </div>
-                          <!-- /.box-body -->
-
-                        </form>
-                        </div>
-
-                        <div class="column-3-middle-bsl box box-warning">
-                         <!-- form start -->
-                          <form role="form" class="form-horizontal">
-                            <div class="box-body" style="height: auto;">
-                            <h3 class="box-title text-orange">LIMIT</h3>
-                            <div class="text-right">
-                              <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
-                            </div>
-                              <div class="form-group" style="margin-top: 20px;">
-                                <label class="col-sm-2 control-label">AMOUNT</label>
-                                <div class="col-sm-10">  
-                                  <div class="input-group">
-                                    <input type="number" class="form-control">
-                                    <span class="input-group-addon">XLM</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label class="col-sm-2 control-label">PRICE</label>
-                                <div class="col-sm-10">  
-                                  <div class="input-group">
-                                    <input type="number" class="form-control text-right">
-                                    <span class="input-group-addon">BTC</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label class="col-sm-2 control-label">TOTAL</label>
-                                <div class="col-sm-10">  
-                                  <div class="input-group">
-                                    <input type="number" class="form-control text-right">
-                                    <span class="input-group-addon">BTC</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                               <div class="text-right">
-                                  <button type="button" class="btn btn-default">Buy</button>
-                              </div>
-                            </div>
-                            <!-- /.box-body -->
-
-                          </form>
-                        </div>
-
-                        <div class="column-3-right-bsl box box-danger">
-                          <!-- form start -->
-                          <form role="form" class="form-horizontal">
-                            <div class="box-body" style="height: auto;">
-                            <h3 class="box-title text-red">SELL STR</h3>
-                            <div class="text-right">
-                              <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Highest Ask</h5>
-                            </div>
-                              <div class="form-group" style="margin-top: 20px;">
-                                <label class="col-sm-2 control-label">AMOUNT</label>
-                                <div class="col-sm-10">  
-                                  <div class="input-group">
-                                    <input type="number" class="form-control">
-                                    <span class="input-group-addon">XLM</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label class="col-sm-2 control-label">PRICE</label>
-                                <div class="col-sm-10">  
-                                  <div class="input-group">
-                                    <input type="number" class="form-control text-right">
-                                    <span class="input-group-addon">BTC</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label class="col-sm-2 control-label">TOTAL</label>
-                                <div class="col-sm-10">  
-                                  <div class="input-group">
-                                    <input type="number" class="form-control text-right">
-                                    <span class="input-group-addon">BTC</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                               <div class="text-right">
-                                  <button type="button" class="btn btn-default">Sell</button>
-                              </div>
-                            </div>
-                            <!-- /.box-body -->
-
-                          </form>
-                        </div>
+                      
+                       <?php include 'marker-not.php';?>
 
                         <!--Two Column Layout-->
                         <div class="column-2-left-buy">
@@ -928,68 +798,7 @@
           </div>
           <!-- End Content-Wrapper -->
 
-          <footer class="main-footer">
-          <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <h1>ABOUT COINVIT</h1>
-              <h4><a href="#">Contact Us</a></h4>
-              <h4><a href="#">Fees</a></h4>
-              <h4><a href="#">Privacy Policy</a></h4>
-              <h4><a href="#">Terms of Use</a></h4>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <h1>SUPPORT</h1>
-              <h4><a href="#">++ Contact Support ++</a></h4>
-              <h4><a href="#">Guides</a></h4>
-              <h4><a href="#">++ SUBMIT A TOKEN ++</a></h4>
-              <h4><a href="#">REPORT Abuse</a></h4>
-              <h4><a href="#">API Documentation</a></h4>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <h1>NEWS</h1>
-              <h4><a href="#">Press Release</a></h4>
-              <h4><a href="#">Follow us on Twitter</a></h4>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-              <label>
-                <a href="">
-                  <i class="fa fa-telegram logo-socmed"></i>
-                </a>
-              </label>
-              
-              <label>
-                <a href="">
-                  <i class="fa fa-facebook-square logo-socmed"></i>
-                </a>
-              </label>
-              
-              <label>
-                <a href="">
-                  <i class="fa fa-twitter logo-socmed"></i>   
-                </a>
-              </label>
-                            
-              <label>
-              <a href="">
-                <i class="fa fa-reddit logo-socmed"></i>
-              </a>
-              </label>
-                            
-              <label>
-              <a href="">
-                <i class="fa fa-medium logo-socmed"></i>
-              </a>
-              </label>
-                            
-              <label>
-              <a href="">
-                <i class="fa fa-instagram logo-socmed"></i>
-              </a>              
-              </label>
-
-            </div>
-          </div>
-        </footer>
+          <?php include 'footer.php' ?>
           </div>
           <!-- End Tab_1 -->
 
@@ -1101,8 +910,8 @@
     <div class="modal-body">
     <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
-              <li><a href="#register" data-toggle="tab">Register</a></li>
+              <li class="active"><a href="#decentralize" data-toggle="tab">Decentralize</a></li>
+              <li><a href="#centralize" data-toggle="tab">Centralize</a></li>
               <li class="pull-right">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -1110,104 +919,34 @@
               </li>
             </ul>
             <div class="tab-content">
-              <div class="tab-pane active" id="login">
-               <div class="register-box">
-                  <div class="register-logo">
-                    <a href="../../index2.html">Hello, friends</a>
+              <div class="tab-pane active" id="decentralize">
+               <form action="../../index.html" method="post">
+                  
+                  <div class="form-group has-feedback">
+                    <label>Secret Key</label>
+                    <input type="text" class="form-control" placeholder="Your secret key">
+                    <span class="fa fa-key form-control-feedback"></span>
                   </div>
-
-                  <div class="register-box-body">
-                   <form action="../../index.html" method="post">
-                      <div class="form-group has-feedback">
-                        <label>Email address</label>
-                        <input type="text" class="form-control" placeholder="Your email address">
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                      </div>
-                      <div class="form-group has-feedback">
-                        <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
-                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox">Remember me 
-                            </label>
-                            <label style="float: right;">
-                              <a href="#" class="text-right"> Forgot password ?</a>
-                            </label>
-                          </div>
-                        </div>
-                        <!-- /.col -->
-
-                        <div class="col-xs-12">
-                          <button type="submit" class="btn btn-default btn-block" style="padding: 8px; margin-bottom: 10px; margin-top: 8px; font-size: 17px;">Login</button>
-                          <span class="text-center">Not yet an account?<a href="register.html" class="text-center"> Register</a></span>
-                        </div>
-                        <!-- /.col -->
-                        
-                      </div>
-                    </form>
-
-
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="btn btn-default btn-block" style="padding: 8px; margin-bottom: 10px; margin-top: 8px; font-size: 17px;">Login</button>
+                      <span class="text-center">Don't have a wallet?<a href="#" data-toggle="modal" data-target="#modal-new-wallet"> Create a new wallet</a></span>
+                    </div>
+                    <!-- /.col -->
+                    
                   </div>
-                  <!-- /.form-box -->
-                </div>
-                <!-- /.register-box -->
+                </form>
               </div>
               <!-- /.tab-pane -->
-              <div class="tab-pane" id="register">
+              <div class="tab-pane" id="centralize">
                 <div class="register-box">
-                  <div class="register-logo">
-                    <a href="../../index2.html">Join with <b>We</b> are</a>
-                  </div>
-
-                  <div class="register-box-body">
-                   <form action="../../index.html" method="post">
-                      <div class="form-group has-feedback">
-                        <label>Email address</label>
-                        <input type="text" class="form-control" placeholder="Your email address">
-                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                      </div>
-                      <div class="form-group has-feedback">
-                        <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
-                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                      </div>
-                      <div class="form-group has-feedback">
-                        <label>Confirm Password</label>
-                        <input type="password" class="form-control" placeholder="Retype password">
-                        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="checkbox icheck text-center">
-                            <label>
-                              <input type="checkbox"> I agree to the <a href="#">Mystellar.org</a> Terms of Service
-                            </label>
-                          </div>
-                              <p style="font-size: 12px; text-align: justify; margin-top: 8px; margin-bottom: 35px;">
-                                We are committed to complying with all U.S. regulations that help prevent, detect and remediate unlawful behavior by customers and virtual currency developers when using the Bittrex trading platform or any of the company’s other services. 
-
-                                Bittrex is not a regulated exchange under U.S. securities laws. More information can be found here . 
-                              </p>
-                        </div>
-                        <!-- /.col -->
-
-                        <div class="col-xs-12">
-                          <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;">Register</button>
-                          <span class="text-center">Already have an account?<a href="login.php" class="text-center"> Login</a></span>
-                        </div>
-                        <!-- /.col -->
-                      </div>
-                    </form>
-
-
-                  </div>
-                  <!-- /.form-box -->
+                  <?php include'register_popup.php'; ?>
+                  <?php include'login_popup.php'; ?>
+                  
+                  <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;" id="register_btn">Register</button>
+                  <h5 class="text-center">Or</h5>
+                  <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;" id="login_btn">Login</button>
                 </div>
-                <!-- /.register-box -->
               </div>
               <!-- /.tab-pane -->
             </div>
@@ -1225,10 +964,48 @@
 <!-- /.modal -->
 
 
-<!-- Canvas JS -->
-<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<div class="modal fade" id="modal-new-wallet">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-body">
+      <h2 class="text-left">Please choose your Blockchain</h2>
+      <div class="register-box">
+        <div class="form-group has-feedback">
+          <img src="https://www.frasindo.com/shop/_upload/Logo_SHOP_-_Stellar.jpg" alt="STELLAR Lumens (XLM)" width="350" height="200">
+        </div>
+        <div class="form-group has-feedback">
+          <img src="https://www.frasindo.com/shop/_upload/Logo_SHOP_-_ARDOR_IGNIS.jpg" alt="ARDOR &amp; IGNIS" width="350" height="200">
+        </div>
+        <div class="form-group has-feedback">
+          <img src="https://www.frasindo.com/shop/_upload/Logo_SHOP_-_Ethereum.jpg" alt="Ethereum" width="350" height="200">
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
 <!-- jQuery 3 -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function () {
+        $("#login_form").hide();
+        
+        $("#login_btn").click(function(){
+          $("#register_form").hide();
+          $("#login_form").show();
+        });
+
+        $("#register_btn").click(function(){
+          $("#register_form").show();
+          $("#login_form").hide();
+        });
+    });
+</script>
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- DataTables -->

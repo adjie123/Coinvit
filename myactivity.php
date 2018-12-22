@@ -19,6 +19,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- ALL Settings -->
+  <link rel="stylesheet" type="text/css" href="dist/css/all_settings.css">
   <!-- Morris chart -->
   <link rel="stylesheet" href="bower_components/morris.js/morris.css">
   <!-- jvectormap -->
@@ -39,32 +41,6 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <style type="text/css">
-  .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
-    background-color: #ffffff;
-  }
-  .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a {
-    color: #181717;
-    background: #dde0e1;
-  }
-  .text-white{
-    color: #fff 
-  }
-  .info-box-header{
-    font-size: 16px;
-    line-height: 16px;
-    vertical-align: text-top;
-  }
-  .bold-font{
-    font-weight: bold;
-  }
-  .content-wrapper{
-    background-color: #fff;
-  }
-  .middle-box{
-    margin-top: 55px;
-  }
-  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -139,14 +115,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
-    </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-    reserved.
-  </footer>
-
+ <?php include 'footer.php' ?>
 </div>
 <!-- ./wrapper -->
 

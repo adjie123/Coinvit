@@ -52,8 +52,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header" style="background-color: #fff; padding-bottom: 30px;">
       <h1>
-        Accounts
-        <small>My Profile</small>
+        SITE SETTINGS
+        <small>Password</small>
       </h1>
     </section>
 
@@ -65,43 +65,20 @@
 		  <div class="register-box-body">
 		   <form action="../../index.html" method="post">
 		      <div class="form-group has-feedback">
-		        <label>Full Name</label>
-		        <input type="text" class="form-control" placeholder="Full Name">
+		        <label>Current password</label>
+		        <input type="text" class="form-control" placeholder="Current password">
 		      </div>
 		      <div class="form-group has-feedback">
-		        <label>Country</label>
-		        <select class="form-control">
-		        	<option>Choose your country ...</option>
-		        </select>
+		        <label>New password</label>
+		        <input type="password" class="form-control" placeholder="New password">
 		      </div>
 		      <div class="form-group has-feedback">
-		        <label>Street Address</label>
-		        <input type="text" class="form-control" placeholder="Street Address">
-		      </div>
-		      <div class="form-group has-feedback">
-		        <label>City</label>
-		        <input type="text" class="form-control" placeholder="City">
-		      </div>
-		      <div class="form-group has-feedback">
-		        <label>Postal Code</label>
-		        <input type="text" class="form-control" placeholder="Postal Code">
-		      </div>
-		      <div class="form-group has-feedback">
-		        <label>Phone Number</label>
-		        <input type="text" class="form-control" placeholder="Phone Number">
+		        <label>Confirm password</label>
+		        <input type="password" class="form-control" placeholder="Confirm password">
 		      </div>
 		      <div class="row">
 		        <div class="col-xs-12">
-		          <div class="checkbox icheck text-center">
-		            <label>
-		              <input type="checkbox"> I agree to the <a href="#">Mystellar.org</a> Terms of Service
-		            </label>
-		          </div>
-		        </div>
-		        <!-- /.col -->
-
-		        <div class="col-xs-12">
-		          <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;">Submit</button>
+		          <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;">Change Password</button>
 		        </div>
 		        <!-- /.col -->
 		      </div>
