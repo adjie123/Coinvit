@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="dist/css/AdminLTE.css">
    <!-- Fixed Column -->
   <link rel="stylesheet" type="text/css" href="dist/css/column-fixed.css">
-
+  <!-- Carousel Tiny -->
+  <link rel="stylesheet" type="text/css" href="dist/css/tinycarousel.css" media="screen">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -134,118 +135,79 @@
   <div class="wrapper">
 
     <header class="main-header">
-      <nav>    
-        <!-- Navbar Right Menu -->
-        <div class="collapse navbar-collapse" style="background-color: #000;">
-
-          <ul class="nav navbar-nav navbar-right">
-           
-            <li><a href="balance.php">Markets</a></li>
-
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-               Decentralize <span class="caret"></span>
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="#">Generate new wallet</a></li>
-                <li><a tabindex="-1" href="#">Login with your own private key</a></li>
-              </ul>
-
-            </li>
-            
-
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                  Centralize <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a class="submenu" tabindex="-1" href="#">
-                      Coinvit Deposit Withdrawal <span class="caret"></span>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                      <li><a tabindex="-1" href="#">BUY CRYPTO with CREDIT CARD</a></li>
-                    </ul>
-
-                  </li>
-
-                </ul>
-            </li>
-            
-            
-            <li>
-              <a href="#">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
-              </a>
-            </li>
-            
-            <li>
-              <a href="#">
-                <i class="fa fa-moon-o"></i>    
-              </a>
-            </li>
-            
-            <li>
-              <a href="#" data-toggle="modal" data-target="#modal-lr">
-                  Login / Register 
-              </a>
-            </li>
-            
-            <li>
-              <a href="#">
-                <i class="fa fa-wifi text-green"></i>    
-              </a>
-            </li>
-                 <!--  <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Coinvit Balance History
-                   </a>
-                 </li>
-                 
-                 <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Open Orders + Trade History
-                   </a>
-                 </li>
-                 
-                 <li>
-                   <a role="menuitem" tabindex="-1" href="#">
-                     Open Orders + Trade History
-                   </a>
-                 </li>
-                 
-                 <li class="dropdown-submenu">
-                   <a class="submenu" tabindex="-1" href="#">
-                     ACCOUNTS <span class="caret"></span>
-                   </a>
-                 
-                   <ul class="dropdown-menu">
-                     <li><a tabindex="-1" href="#">Profile</a></li>
-                     <li><a tabindex="-1" href="#">Password</a></li>
-                     <li><a tabindex="-1" href="#">2FA Two-Factor-Authentication</a></li>
-                     <li><a tabindex="-1" href="#">API keys</a></li>
-                     <li><a tabindex="-1" href="#">Whitelist</a></li>
-                     <li><a tabindex="-1" href="#">Notifications</a></li>
-                     <li><a tabindex="-1" href="#">Refferal Bonus</a></li>
-                   </ul>
-                 
-                 </li>
-                  -->
-           
-
-          </ul>
-        
-        </nav>
-      </header>
-      <!-- Left side column. contains the logo and sidebar -->
+      <?php include 'menu-header.php';?>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
 
 
             <section style="width: 100%;">
               <div class="box">
+                <div class="box-header" style="padding-left: 12%; padding-right: 12%;">
+                  
+                    <!--Four Column Layout-->
+
+                  <div class="column-4-asset">
+                     <div id="slider1">
+                      <div class="viewport">
+                        <ul class="overview">
+                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
+                          <li><img src="dist/images/picture4.jpg" /></li>
+                          <li><img src="dist/images/picture3.jpg" /></li>
+                          <li><img src="dist/images/picture2.jpg" /></li>
+                          <li><img src="dist/images/picture5.jpg" /></li>
+                          <li><img src="dist/images/picture1.jpg" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column-4-asset">
+                    <div id="slider2">
+                      <div class="viewport">
+                        <ul class="overview">
+                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
+                          <li><img src="dist/images/picture4.jpg" /></li>
+                          <li><img src="dist/images/picture3.jpg" /></li>
+                          <li><img src="dist/images/picture2.jpg" /></li>
+                          <li><img src="dist/images/picture5.jpg" /></li>
+                          <li><img src="dist/images/picture1.jpg" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column-4-asset ">
+                    <div id="slider3">
+                      <div class="viewport">
+                        <ul class="overview">
+                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
+                          <li><img src="dist/images/picture3.jpg" /></li>
+                          <li><img src="dist/images/picture5.jpg" /></li>
+                          <li><img src="dist/images/picture1.jpg" /></li>
+                          <li><img src="dist/images/picture4.jpg" /></li>
+                          <li><img src="dist/images/picture2.jpg" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column-4-asset">
+                    <div id="slider4">
+                      <div class="viewport">
+                        <ul class="overview">
+                          <li><img src="dist/images/picture4.jpg" /></li>
+                          <li><img src="dist/images/picture3.jpg" /></li>
+                          <li><img src="dist/images/picture2.jpg" /></li>
+                          <li><img src="dist/images/picture5.jpg" /></li>
+                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
+                          <li><img src="dist/images/picture1.jpg" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- /.box-header -->
-                <div class="box-body" style="background-color: #d92b60; color: #fff; margin-top: -5px;">
+                <div class="box-body" style="background-color: #d92b60; color: #fff;">
                   <!--Three Column Layout-->
                   <div class="column-3-left-mh text-center">
                     <p style="font-size: 50px;">Bitcoin (BTC)</p>
@@ -273,7 +235,7 @@
                   
                   <!--Four Column Layout-->
 
-                  <div class="column-4-asset border-right">
+                  <div class="column-4-asset">
                      <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png"
                           width="80" height="80" style="float: left; margin-right: 5px;">
 
@@ -285,7 +247,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4-asset  border-right">
+                  <div class="column-4-asset ">
                     <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png"
                           width="80" height="80" style="float: left; margin-right: 5px;">
 
@@ -326,10 +288,18 @@
               <!-- /.box -->
                 <div class="card">  
                   <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation">
+                      <a href="#fav" aria-controls="favorite" role="tab" data-toggle="tab">
+                        <i class="fa fa-star text-yellow"></i>
+                         Favorites
+                      </a>
+                    </li>
                     <li role="presentation" class="active"><a href="#usdt" aria-controls="usdt" role="tab" data-toggle="tab">USDT</a></li>
+                    <?php 
+                      for ($i=0; $i <10 ; $i++) { 
+                    ?>
                     <li role="presentation"><a href="#btc" aria-controls="btc" role="tab" data-toggle="tab">BTC</a></li>
-                    <li role="presentation"><a href="#eth" aria-controls="eth" role="tab" data-toggle="tab">ETH</a></li>
-                    <li role="presentation"><a href="#xlm" aria-controls="xlm" role="tab" data-toggle="tab">XLM</a></li>
+                    <?php } ?>
 
                     <li class="pull-right">
                       <input type="text" name="" style="margin: 3px; padding: 3px; border: 1px solid #999999;     border-radius: 4px;" placeholder="Search"> 
@@ -337,19 +307,61 @@
                   </ul>
 
                   <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="fav">
+                      <!-- Market History -->
+                      <table class="table table-hover scroll-market">
+                        <thead>
+                          <tr>
+                            <th style="width: 25px;"></th>
+                            <th style="width: 145px;">MARKET</th>
+                            <th style="width: 150px;">CURRENCY</th>
+                            <th style="width: 150px;">VOLUME</th>
+                            <th style="width: 142px;">% CHANGE</th>
+                            <th style="width: 145px;">LAST PRICE</th>
+                            <th style="width: 165px;">24HR HIGH</th>
+                            <th style="width: 160px;">24HR LOW</th>
+                            <th style="width: 155px;">% SPREAD</th>
+                            <th style="width: 150px;">ADDED</th>
+                          </tr>
+                        </thead>
+                         <tbody>
+                         <?php
+                            for ($i=0; $i <20 ; $i++) {?> 
+                            <tr id="fav-asset">
+                              <td><i class="fa fa-star text-yellow"></i></td>
+                              <td style="width: 150px;">USD-BTC</td>
+                              <td style="width: 150px;">Bitcoin</td>
+                              <td style="width: 150px;">1286578.70</td>
+                              <td class="text-red" style="width: 150px;">-0.1 <i class="fa fa-caret-down"></i></td>
+                              <td style="width: 150px;">7154.88900000</td>
+                              <td style="width: 165px;">7325.00000000</td>
+                              <td style="width: 165px;">7011.00000000</td>
+                              <td style="width: 160px;">0.0</td>
+                              <td style="width: 160px;">05/31/2018</td>
+                            </tr>   
+                          <?php
+                            }
+                         ?>
+                        </tbody>
+                      </table>
+                      <!-- End Market History -->
+                    </div>
+                    <!-- End tab-pane -->
+
                     <div role="tabpanel" class="tab-pane active" id="usdt">
                       <!-- Market History -->
                       <table class="table table-hover scroll-market">
                         <thead>
                           <tr>
-                            <th style="width: 150px;">MARKET</th>
+                            <th style="width: 25px;"></th>
+                            <th style="width: 145px;">MARKET</th>
                             <th style="width: 150px;">CURRENCY</th>
                             <th style="width: 150px;">VOLUME</th>
-                            <th style="width: 150px;">% CHANGE</th>
-                            <th style="width: 160px;">LAST PRICE</th>
-                            <th style="width: 160px;">24HR HIGH</th>
+                            <th style="width: 142px;">% CHANGE</th>
+                            <th style="width: 145px;">LAST PRICE</th>
+                            <th style="width: 165px;">24HR HIGH</th>
                             <th style="width: 160px;">24HR LOW</th>
-                            <th style="width: 150px;">% SPREAD</th>
+                            <th style="width: 155px;">% SPREAD</th>
                             <th style="width: 150px;">ADDED</th>
                           </tr>
                         </thead>
@@ -357,6 +369,7 @@
                          <?php
                             for ($i=0; $i <20 ; $i++) {?> 
                             <tr>
+                              <td class="cc" id="cc"><span><i class="fa fa-star-o text-yellow"></i></span></td>
                               <td style="width: 150px;">USD-BTC</td>
                               <td style="width: 150px;">Bitcoin</td>
                               <td style="width: 150px;">1286578.70</td>
@@ -435,6 +448,78 @@
 <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <!-- jQuery 3 -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS Carousel -->
+<script src="dist/js/jquery.tinycarousel.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+       $("#slider1").tinycarousel({
+          interval: true,
+          axis   : "y"
+        });
+       $("#slider2").tinycarousel({
+          interval: true,
+          axis   : "y"
+        });
+       $("#slider3").tinycarousel({
+          interval: true,
+          axis   : "y"
+        });
+       $("#slider4").tinycarousel({
+          interval: true,
+          axis   : "y"
+        });
+    });
+  </script>
+
+  <script type="text/javascript">
+  //Handle starring for glyphicon and font awesome
+    $("span").click(function (e) {
+      e.preventDefault();
+      //detect type
+      var $this = $(this).find("i");
+      var fa = $this.hasClass("fa");
+
+      //Switch states
+       if (fa) {
+        $this.toggleClass("fa-star");
+        $this.toggleClass("fa-star-o");
+      }
+
+    });
+
+    $("td.cc").click(function (){
+      var idx = $(this).index();
+      $("tr#fav-asset").eq(idx).attr("id", "favo");
+      $("tr#favo").css('display','block');
+    });
+
+    /*$("li").click(function (){
+      var li = $("li a span i.fa-star");
+      if (li.is("li a span i.fa-star")) {
+            li.attr("id", "favo");
+        }
+    });*/
+
+    $("#fav").click(function(){
+      $("tr#favo").show();
+    });
+
+
+
+  $(document).ready(function(){
+    $("tr#fav-asset").hide();
+    $("tr.favo").show();
+    $('.dropdown-submenu a.submenu').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+
+</script>
+
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- DataTables -->
