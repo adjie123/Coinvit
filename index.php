@@ -58,7 +58,8 @@
     }
 
     body{
-      width: 1790px;
+    /*width : 1790px; */
+      width: 1636px;
       overflow-x: scroll;
     }
 

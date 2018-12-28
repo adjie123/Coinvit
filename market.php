@@ -150,12 +150,8 @@
                      <div id="slider1">
                       <div class="viewport">
                         <ul class="overview">
-                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
-                          <li><img src="dist/images/picture4.jpg" /></li>
-                          <li><img src="dist/images/picture3.jpg" /></li>
-                          <li><img src="dist/images/picture2.jpg" /></li>
-                          <li><img src="dist/images/picture5.jpg" /></li>
-                          <li><img src="dist/images/picture1.jpg" /></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" /></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20stellar.png" /></li>
                         </ul>
                       </div>
                     </div>
@@ -165,12 +161,8 @@
                     <div id="slider2">
                       <div class="viewport">
                         <ul class="overview">
-                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
-                          <li><img src="dist/images/picture4.jpg" /></li>
-                          <li><img src="dist/images/picture3.jpg" /></li>
-                          <li><img src="dist/images/picture2.jpg" /></li>
-                          <li><img src="dist/images/picture5.jpg" /></li>
-                          <li><img src="dist/images/picture1.jpg" /></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" /></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20stellar.png" /></li>
                         </ul>
                       </div>
                     </div>
@@ -180,12 +172,8 @@
                     <div id="slider3">
                       <div class="viewport">
                         <ul class="overview">
-                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" /></li>
                           <li><img src="dist/images/picture3.jpg" /></li>
-                          <li><img src="dist/images/picture5.jpg" /></li>
-                          <li><img src="dist/images/picture1.jpg" /></li>
-                          <li><img src="dist/images/picture4.jpg" /></li>
-                          <li><img src="dist/images/picture2.jpg" /></li>
                         </ul>
                       </div>
                     </div>
@@ -195,12 +183,8 @@
                     <div id="slider4">
                       <div class="viewport">
                         <ul class="overview">
-                          <li><img src="dist/images/picture4.jpg" /></li>
-                          <li><img src="dist/images/picture3.jpg" /></li>
-                          <li><img src="dist/images/picture2.jpg" /></li>
-                          <li><img src="dist/images/picture5.jpg" /></li>
-                          <li><img src="dist/images/picture6.jpg" height="100%" width="100%" /></li>
-                          <li><img src="dist/images/picture1.jpg" /></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20stellar.png" eight="100%" width="100%"/></li>
+                          <li><img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" /></li>
                         </ul>
                       </div>
                     </div>
@@ -286,7 +270,11 @@
                 <!-- /.box-footer -->
               </div>
               <!-- /.box -->
-                <div class="card">  
+                <div class="card"> 
+                   <div class="text-center" style="margin-right: 8px; margin-left: 8px;">
+                    <button type="button" class="btn btn-danger" style="padding: 10px; margin: 8px;">TOKEN</button>
+                    <button type="button" class="btn btn-warning" style="padding: 10px; margin: 8px; padding-right: 15px; padding-left: 15px;">FIAT</button>
+                  </div> 
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation">
                       <a href="#fav" aria-controls="favorite" role="tab" data-toggle="tab">
@@ -309,7 +297,7 @@
                   <div class="tab-content">
                     <div role="tabpanel" class="tab-pane" id="fav">
                       <!-- Market History -->
-                      <table class="table table-hover scroll-market">
+                      <table class="table table-hover">
                         <thead>
                           <tr>
                             <th style="width: 25px;"></th>
@@ -350,7 +338,7 @@
 
                     <div role="tabpanel" class="tab-pane active" id="usdt">
                       <!-- Market History -->
-                      <table class="table table-hover scroll-market">
+                      <table class="table table-hover" id="coin-asset">
                         <thead>
                           <tr>
                             <th style="width: 25px;"></th>
@@ -390,41 +378,7 @@
                     <!-- End tab-pane -->
                     
                     <div role="tabpanel" class="tab-pane" id="btc">
-                      <!-- Market History -->
-                      <table class="table table-hover scroll-market" id="mh" width="100%" cellspacing="0">
-                         <thead>
-                          <tr>
-                            <th style="width: 150px;">MARKET</th>
-                            <th style="width: 150px;">CURRENCY</th>
-                            <th style="width: 150px;">VOLUME</th>
-                            <th style="width: 150px;">% CHANGE</th>
-                            <th style="width: 160px;">LAST PRICE</th>
-                            <th style="width: 160px;">24HR HIGH</th>
-                            <th style="width: 160px;">24HR LOW</th>
-                            <th style="width: 150px;">% SPREAD</th>
-                            <th style="width: 150px;">ADDED</th>
-                          </tr>
-                        </thead>
-                         <tbody>
-                         <?php
-                            for ($i=0; $i <20 ; $i++) {?> 
-                            <tr>
-                              <td style="width: 150px;">USD-BTC</td>
-                              <td style="width: 150px;">Bitcoin</td>
-                              <td style="width: 150px;">1286578.70</td>
-                              <td class="text-green" style="width: 150px;">-0.1 <i class="fa fa-caret-up"></i></td>
-                              <td style="width: 150px;">7154.88900000</td>
-                              <td style="width: 165px;">7325.00000000</td>
-                              <td style="width: 165px;">7011.00000000</td>
-                              <td style="width: 160px;">0.0</td>
-                              <td style="width: 160px;">05/31/2018</td>
-                            </tr>   
-                          <?php
-                            }
-                         ?>
-                        </tbody>
-                        </table>
-                        <!-- End Market History -->
+                      
                     </div>
                     <!-- End tab-pane -->
 
@@ -438,7 +392,29 @@
                   </div>
                   <!-- End tab-content -->
                 </div>
-                <!-- End card -->               
+                <!-- End card -->            
+                <!-- ./box-body -->
+                <div class="box-footer" style="padding-left: 12%; padding-right: 12%;">
+                  
+                  <!--Four Column Layout-->
+
+                  <div class="column-4-asset">
+                     <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" />
+                  </div>
+
+                  <div class="column-4-asset ">
+                    <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" />
+                  </div>
+
+                  <div class="column-4-asset  border-right">
+                    <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" />
+                  </div>
+
+                  <div class="column-4-asset">
+                    <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" />
+                  </div>
+                </div>
+                <!-- /.box-footer -->   
             </section>
         
     <?php include 'footer.php' ?>
@@ -492,7 +468,7 @@
     $("td.cc").click(function (){
       var idx = $(this).index();
       $("tr#fav-asset").eq(idx).attr("id", "favo");
-      $("tr#favo").css('display','block');
+      $("tr#favo").css('display','');
     });
 
     /*$("li").click(function (){
@@ -536,21 +512,19 @@
 <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- SlimScroll -->
 <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- ChartJS -->
-<script src="bower_components/chart.js/Chart.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard2.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-<script src="https://www.amcharts.com/lib/3/serial.js"></script>
-<script src="https://www.amcharts.com/lib/3/amstock.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script type="text/javascript">
+  $('#coin-asset').DataTable({
+      'paging'      : true,
+      'searching'   : false,
+      'info'        : false,
+      'ordering'    : true,
+      'lengthChange': false,
+       'pagingType'  : 'full_numbers',
+      'responsive'  : true,
+      "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+      'autoWidth'   : false
+    })
+</script>
 
 
 
