@@ -114,9 +114,9 @@
 <!-- /.register-box -->
     </section>
     <!-- /.content -->
+  <?php include 'footer.php' ?>
   </div>
   <!-- /.content-wrapper -->
-<?php include 'footer.php' ?>
 
 </div>
 <!-- ./wrapper -->
