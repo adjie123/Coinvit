@@ -7,21 +7,21 @@
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <!-- Bootstrap 3.3.7 -->
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
       <!-- Font Awesome -->
-      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
       <!-- Theme style -->
-      <link rel="stylesheet" href="dist/css/AdminLTE.css">
+      <link rel="stylesheet" href="../dist/css/AdminLTE.css">
       <!-- Fixed Column -->
-      <link rel="stylesheet" type="text/css" href="dist/css/column-fixed.css">
+      <link rel="stylesheet" type="text/css" href="../dist/css/column-fixed.css">
       <!-- Scrollbar Custom -->
-      <link rel="stylesheet" type="text/css" href="dist/css/scrollbar-custom.css">
+      <link rel="stylesheet" type="text/css" href="../dist/css/scrollbar-custom.css">
       <!-- Custom Layout -->
-      <link rel="stylesheet" type="text/css" href="dist/css/custom-layout.css">
+      <link rel="stylesheet" type="text/css" href="../dist/css/custom-layout.css">
       <!-- Size Custom -->
-      <link rel="stylesheet" type="text/css" href="dist/css/size-custom.css">
+      <link rel="stylesheet" type="text/css" href="../dist/css/size-custom.css">
       <!-- Carousel Tiny -->
-      <link rel="stylesheet" type="text/css" href="dist/css/tinycarousel.css" media="screen">
+      <link rel="stylesheet" type="text/css" href="../dist/css/tinycarousel.css" media="screen">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -32,7 +32,19 @@
          body{
          width: 1590px;
          overflow-x: scroll;
+         background-color: #2B3441;
          }
+         .nav-tabs > li > a {
+              border: none;
+              color: #fff;
+          }
+        p{
+          margin : 0 0 0 0;
+        }
+        .box-footer {
+            color: #fff;
+            background-color: #2b3441;
+        }
       </style>
       <!-- Google Font -->
       <link rel="stylesheet"
@@ -104,7 +116,8 @@
       <!-- Left side column. contains the logo and sidebar -->
       <section style="width: 100%;">
          <div class="box">
-            <div class="box-header" style="padding: 0 12% 0 12%; ">
+            <div class="box-header" style="padding: 0 12% 0 12%; background-color: #161616; margin: -3px 0 0 0;">
+               <h1 class="text-center" style="color: #fff; margin: 50px 0 100px 0;">Coinvit - Exchange Centralize and Decentralize</h1>
                <!--Four Column Layout-->
                <div class="column-4-asset">
                   <div id="slider1">
@@ -172,7 +185,7 @@
             <!-- ./box-body -->
             <div class="box-footer" style="padding-left: 12%; padding-right: 12%;">
                <!--Four Column Layout-->
-               <div class="column-4-asset">
+               <div class="column-4-asset border-right">
                   <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png"
                      width="80" height="80" style="float: left; margin-right: 5px;">
                   <div class="text-right" style="margin-right: 8px;">
@@ -182,7 +195,7 @@
                      <p style="font-size: 15px;" class="text-red asset-komp">0.8 <i class="fa fa-caret-down"></i></p>
                   </div>
                </div>
-               <div class="column-4-asset ">
+               <div class="column-4-asset border-right">
                   <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png"
                      width="80" height="80" style="float: left; margin-right: 5px;">
                   <div class="text-right" style="margin-right: 8px;">
@@ -192,7 +205,7 @@
                      <p style="font-size: 15px;" class="text-red asset-komp">0.8 <i class="fa fa-caret-down"></i></p>
                   </div>
                </div>
-               <div class="column-4-asset  border-right">
+               <div class="column-4-asset border-right">
                   <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png"
                      width="80" height="80" style="float: left; margin-right: 5px;">
                   <div class="text-right" style="margin-right: 8px;">
@@ -216,7 +229,7 @@
             <!-- /.box-footer -->
          </div>
          <!-- /.box -->
-         <div class="card">
+         <div class="card" style="color: #fff; background-color: #2B3441;">
             <!-- Choose Asset TOKEN / FIAT -->
             <div class="text-center" style="margin-right: 8px; margin-left: 8px;">
                <button type="button" class="btn btn-danger" style="padding: 10px; margin: 8px;">TOKEN</button>
@@ -421,7 +434,7 @@
          </div>
          <!-- End card -->            
          <!-- ./box-body -->
-         <div class="box-footer" style="padding-left: 12%; padding-right: 12%;">
+         <div class="box-header" style="padding-left: 12%; padding-right: 12%; background-color: #202835;">
             <!--Four Column Layout-->
             <div class="column-4-asset">
                <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="100%" width="100%" />
@@ -498,10 +511,10 @@
       </footer>
    </body>
    <!-- jQuery 3 -->
-   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
    <!-- JS Carousel -->
-   <script src="dist/js/jquery.tinycarousel.js"></script>
+   <script src="../dist/js/jquery.tinycarousel.js"></script>
    <script type="text/javascript">
       $(document).ready(function()
       {
@@ -570,19 +583,14 @@
       
    </script>
    <!-- Bootstrap 3.3.7 -->
-   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
    <!-- DataTables -->
-   <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-   <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+   <script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+   <script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
    <!-- AdminLTE App -->
-   <script src="dist/js/adminlte.min.js"></script>
-   <!-- Sparkline -->
-   <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-   <!-- jvectormap  -->
-   <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-   <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+   <script src="../dist/js/adminlte.min.js"></script>
    <!-- SlimScroll -->
-   <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+   <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
    <script type="text/javascript">
       $('#coin-asset').DataTable({
           'paging'      : true,

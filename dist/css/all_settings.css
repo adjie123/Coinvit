@@ -1,6 +1,5 @@
- .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
-    background-color: #ffffff;
-    border-right: 1px solid #E7EBF1;
+ a {
+    color: #e0e0e0;
   }
   .space-menu{
     margin-bottom: 20px;
@@ -31,13 +30,14 @@
     padding: 5px;
     font-size: 28px;
   }
-  a {
-    color: #121212;
-  }
   .sidebar-menu>li {
-    border-bottom: 1px solid #E7EBF1;
+    border-bottom: 1px solid #566e91;
   }
 
   .text-white{
     color: #fff 
   }
+  .main-footer {
+  background: #27323a;
+  color: #c3c1c1;
+}

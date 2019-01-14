@@ -7,22 +7,22 @@
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <!-- Bootstrap 3.3.7 -->
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
       <!-- Font Awesome -->
-      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
       <!-- Ionicons -->
-      <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+      <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
       <!-- Fixed Column -->
-      <link rel="stylesheet" type="text/css" href="dist/css/column-fixed.css">
-      <!-- Custom Layout -->
-      <link rel="stylesheet" type="text/css" href="dist/css/custom-layout.css">
+      <link rel="stylesheet" type="text/css" href="../dist/css/column-fixed.css">
       <!-- Theme style -->
-      <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+      <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+      <!-- Custom Layout -->
+      <link rel="stylesheet" type="text/css" href="../dist/css/custom-layout.css">
       <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-      <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+      <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
       <!-- ALL Settings -->
-      <link rel="stylesheet" href="dist/css/all_settings.css">
+      <link rel="stylesheet" href="../dist/css/all_settings.css">
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -31,6 +31,13 @@
       <![endif]-->
       <!-- Google Font -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+      <style type="text/css">
+      .box {
+        background: #2b3441;
+        color: #fff;      
+      }
+      </style>
    </head>
    <body class="hold-transition skin-blue sidebar-mini">
       <div class="wrapper">
@@ -115,38 +122,37 @@
       </aside>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-          <div class="box">
-             <div class="box-header">
-                <h1>
-                   Account
-                   <small>Indentity Verification</small>
-                </h1>
-             </div>
-             <div class="box-body">
-                <div class="callout callout-success" style="margin-bottom: 0!important;">
-                   <h4>Note:</h4>
-                   Verifying your identity improves the security of your account. The next step in the process is to submit the materials needed to verify your identity. While driver’s licenses and ID cards are permitted, we recommend you use passports to help expedite the process. 
-                </div>
-                <div class="register-box">
-                   <p>
-                      Tips for successful verification:
-                      Take a fresh selfie and ensure that nothing is blocking the full view of your face
-                      Do not use the same image from your identification documents
-                      Do not use a professional profile picture
-                      Do not manipulate the image of your identification in anyway, including the addition of watermarks or blacking out certain information
-                      Do not crop the image of your ID such that any portion of the ID is removed, including edges
-                   </p>
-                   <div class="row">
-                      <div class="col-md-8">
-                         <button type="submit" class="btn btn-primary btn-lg form-control" style="padding-bottom: 30px;">Start ID Verification</button>
-                      </div>
-                      <!-- /.col -->
-                   </div>
-                </div>
-                <!-- Box-Content -->
+        <div class="box">
+           <div class="box-header">
+              <h1 class="text-white">
+                 Account
+                 <small class="text-white">Indentity Verification</small>
+              </h1>
+           </div>
+           <div class="box-body">
+              <div class="callout callout-success" style="margin-bottom: 0!important;">
+                 <h4>Note:</h4>
+                 Verifying your identity improves the security of your account. The next step in the process is to submit the materials needed to verify your identity. While driver’s licenses and ID cards are permitted, we recommend you use passports to help expedite the process. 
               </div>
-              <!-- box-body -->
-             </div>
+              <div class="register-box">
+                 <p>
+                    Tips for successful verification:
+                    Take a fresh selfie and ensure that nothing is blocking the full view of your face
+                    Do not use the same image from your identification documents
+                    Do not use a professional profile picture
+                    Do not manipulate the image of your identification in anyway, including the addition of watermarks or blacking out certain information
+                    Do not crop the image of your ID such that any portion of the ID is removed, including edges
+                 </p>
+                 <div class="row">
+                    <div class="col-md-8">
+                       <button type="submit" class="btn btn-primary btn-lg form-control" style="padding-bottom: 30px;">Start ID Verification</button>
+                    </div>
+                    <!-- /.col -->
+                 </div>
+              </div>
+              <!-- Box-Content -->
+           </div>
+           <!-- Box-->
           <footer class="main-footer" style="margin-left: 0;">
              <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3">
@@ -205,19 +211,20 @@
                 </div>
              </div>
           </footer>
+           </div>
          </div>
          <!-- /.content-wrapper -->
       </div>
       <!-- ./wrapper -->
    </body>
 <!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
    $.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
