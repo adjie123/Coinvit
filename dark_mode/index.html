@@ -33,7 +33,7 @@
             overflow-x: scroll;   
          }
          .wrapper{
-            width : 1640px; 
+            width : 1790px; 
          }
          .box-body {
           background-color: #2b3441;
@@ -62,13 +62,22 @@
         .box {
           background: #2b3441;
         }
+        .nav-tabs-custom > .nav-tabs > li > a {
+             color: #fff;
+         }
+         .nav-tabs-custom {
+            background-color: #2b3441;
+         }
+         .nav-tabs-custom > .tab-content {
+            background-color: #2b3441;
+         }
       </style>
       <!-- Google Font -->
       <link rel="stylesheet"
          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
    </head>
    <!-- Body with maximize minimize sidebar left -->
-   <body class="hold-transition skin-blue fixed sidebar-mini sidebar-collapse">
+   <body class="hold-transition skin-blue fixed sidebar-mini">
       <div class="wrapper">
       <!-- Main Header end in line 200 -->
       <header class="main-header">
@@ -86,7 +95,7 @@
                   Centralize <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                     <li><a tabindex="-1" href="#">Wallet</a></li>
+                     <li><a tabindex="-1" href="balances.html">Wallet</a></li>
                      <li><a tabindex="-1" href="#">Orders</a></li>
                      <li><a tabindex="-1" href="#">History</a></li>
                   </ul>
@@ -96,7 +105,7 @@
                   Decentralize <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                     <li><a tabindex="-1" href="#">Wallet</a></li>
+                     <li><a tabindex="-1" href="balances.html">Wallet</a></li>
                      <li><a tabindex="-1" href="#">Orders</a></li>
                      <li><a tabindex="-1" href="#">History</a></li>
                   </ul>
@@ -400,106 +409,7 @@
                               <!-- Candle Stick Main -->
                               <iframe src="http://127.0.0.1:9090/" class="candle-layout"></iframe>
                               <!-- Column-3-middle-bsl for BUY-->
-                              <div class="column-3-left-bsl box box-success">
-                                 <form role="form" class="form-horizontal">
-                                    <div class="box-body" style="height: auto;">
-                                       <h3 class="box-title text-green">BUY STR</h3>
-                                       <div class="text-right">
-                                          <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
-                                       </div>
-                                       <div class="form-group" style="margin-top: 20px;">
-                                          <label class="col-sm-2 control-label">AMOUNT</label>
-                                          <div class="col-sm-10">
-                                             <div class="input-group">
-                                                <input type="number" class="form-control" disabled>
-                                                <span class="input-group-addon">XLM</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="form-group">
-                                          <label class="col-sm-2 control-label">PRICE</label>
-                                          <div class="col-sm-10">
-                                             <div class="input-group">
-                                                <input type="number" class="form-control text-right" disabled>
-                                                <span class="input-group-addon">BTC</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="form-group">
-                                          <label class="col-sm-2 control-label">TOTAL</label>
-                                          <div class="col-sm-10">
-                                             <div class="input-group">
-                                                <input type="number" class="form-control text-right" disabled>
-                                                <span class="input-group-addon">BTC</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <!-- /.box-body -->
-                                 </form>
-                              </div>
-                              <!-- End Column-3-middle-bsl for BUY-->
-                              <!-- Column-3-middle-bsl for LIMIT-->
-                              <div class="column-3-middle-bsl box box-warning">
-                                 <!-- form start -->
-                                 <form role="form" class="form-horizontal">
-                                    <div class="box-body" style="height: auto;">
-                                       <h3 class="box-title text-orange">LIMIT</h3>
-                                       <div class="text-right">
-                                          <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
-                                       </div>
-                                       <div class="text-center">
-                                          <h3 style="margin-top: 50px">To begin trading please log in or create an account.</h3>
-                                          <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal-lr">Login or Create an Acoount</button>
-                                       </div>
-                                    </div>
-                                    <!-- /.box-body -->
-                                 </form>
-                              </div>
-                              <!-- End column-3-middle-bsl for LIMIT -->
-                              <!-- column-3-middle-bsl for SELL-->
-                              <div class="column-3-right-bsl box box-danger">
-                                 <!-- form start -->
-                                 <form role="form" class="form-horizontal">
-                                    <div class="box-body" style="height: auto;">
-                                       <h3 class="box-title text-red">SELL STR</h3>
-                                       <div class="text-right">
-                                          <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Highest Ask</h5>
-                                       </div>
-                                       <div class="form-group" style="margin-top: 20px;">
-                                          <label class="col-sm-2 control-label">AMOUNT</label>
-                                          <div class="col-sm-10">
-                                             <div class="input-group">
-                                                <input type="number" class="form-control" disabled>
-                                                <span class="input-group-addon">XLM</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="form-group">
-                                          <label class="col-sm-2 control-label">PRICE</label>
-                                          <div class="col-sm-10">
-                                             <div class="input-group">
-                                                <input type="number" class="form-control text-right" disabled>
-                                                <span class="input-group-addon">BTC</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="form-group">
-                                          <label class="col-sm-2 control-label">TOTAL</label>
-                                          <div class="col-sm-10">
-                                             <div class="input-group">
-                                                <input type="number" class="form-control text-right" disabled>
-                                                <span class="input-group-addon">BTC</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <!-- /.box-body -->
-                                 </form>
-                              </div>
-                              <!-- End column-3-middle-bsl for SELL-->
-                              <!--Two Column Layout-->
-                              <div class="column-2-left-buy">
+                              <div class="column-3-left-bsl" style="height: 500px;">
                                  <table class="table table-hover" id="bid" width="100%" cellspacing="0">
                                     <thead>
                                        <tr>
@@ -539,10 +449,175 @@
                                           <td>0.00003326</td>
                                           <td class="text-green">SELL</td>
                                        </tr>
+                                       <tr style="background: linear-gradient(to left, rgb(48, 119, 54) 94.1%, rgb(43, 52, 65) 94.1%);">
+                                          <td>1.1697</td>
+                                          <td>1.1697</td>
+                                          <td>35252.525</td>
+                                          <td>0.00003326</td>
+                                          <td class="text-green">SELL</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to left, rgb(48, 119, 54) 94.1%, rgb(43, 52, 65) 94.1%);">
+                                          <td>1.1697</td>
+                                          <td>1.1697</td>
+                                          <td>35252.525</td>
+                                          <td>0.00003326</td>
+                                          <td class="text-green">SELL</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to left, rgb(48, 119, 54) 94.1%, rgb(43, 52, 65) 94.1%);">
+                                          <td>1.1697</td>
+                                          <td>1.1697</td>
+                                          <td>35252.525</td>
+                                          <td>0.00003326</td>
+                                          <td class="text-green">SELL</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to left, rgb(48, 119, 54) 94.1%, rgb(43, 52, 65) 94.1%);">
+                                          <td>1.1697</td>
+                                          <td>1.1697</td>
+                                          <td>35252.525</td>
+                                          <td>0.00003326</td>
+                                          <td class="text-green">SELL</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to left, rgb(48, 119, 54) 94.1%, rgb(43, 52, 65) 94.1%);">
+                                          <td>1.1697</td>
+                                          <td>1.1697</td>
+                                          <td>35252.525</td>
+                                          <td>0.00003326</td>
+                                          <td class="text-green">SELL</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to left, rgb(48, 119, 54) 94.1%, rgb(43, 52, 65) 94.1%);">
+                                          <td>1.1697</td>
+                                          <td>1.1697</td>
+                                          <td>35252.525</td>
+                                          <td>0.00003326</td>
+                                          <td class="text-green">SELL</td>
+                                       </tr>
                                     </tbody>
                                  </table>
                               </div>
-                              <div class="column-2-right-sell">
+                              <!-- End Column-3-middle-bsl for BUY-->
+                              <!-- Column-3-middle-bsl for LIMIT-->
+                              <div class="column-3-middle-bsl">
+                                 <div class="nav-tabs-custom">
+                                    <ul class="nav nav-tabs">
+                                       <li class="active"><a href="#buy" data-toggle="tab">Buy</a></li>
+                                       <li><a href="#sell" data-toggle="tab">Sell</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                       <div class="tab-pane active" id="buy">
+                                          <form role="form" class="form-horizontal">
+                                             <div class="box-body" style="height: auto;">
+                                                <h3 class="box-title text-green">Buy STR</h3>
+                                                <div class="text-right">
+                                                   <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
+                                                </div>
+                                                <div class="form-group" style="margin-top: 20px;">
+                                                   <label class="col-sm-2 control-label">TYPE</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <select class="form-control">
+                                                            <option value="">Limit</option>
+                                                            <option value="">Conditional</option>
+                                                         </select>
+                                                         <span class="input-group-addon">OPT</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="col-sm-2 control-label">AMOUNT</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <input type="number" class="form-control" disabled>
+                                                         <span class="input-group-addon">XLM</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="col-sm-2 control-label">PRICE</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <input type="number" class="form-control text-right" disabled>
+                                                         <span class="input-group-addon">BTC</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="col-sm-2 control-label">TOTAL</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <input type="number" class="form-control text-right" disabled>
+                                                         <span class="input-group-addon">BTC</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group" style="margin: 30px 0 0 0;">
+                                                   <button type="submit" class="btn btn-block btn-success" style="padding: 8px 0 8px 0; font-size: 18px;">Buy</button>
+                                                </div>
+                                             </div>
+                                             <!-- /.box-body -->
+                                          </form>
+                                       </div>
+                                       <div class="tab-pane" id="sell">
+                                          <form role="form" class="form-horizontal">
+                                             <div class="box-body" style="height: auto;">
+                                                <h3 class="box-title text-red">Sell STR</h3>
+                                                <div class="text-right">
+                                                   <h5 style="margin-top: -30px;"><b>0.00000000 BTC</b> : Lowest Ask</h5>
+                                                </div>
+                                                 <div class="form-group" style="margin-top: 20px;">
+                                                   <label class="col-sm-2 control-label">TYPE</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <select class="form-control">
+                                                            <option value="">Limit</option>
+                                                            <option value="">Conditional</option>
+                                                         </select>
+                                                         <span class="input-group-addon">OPT</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="col-sm-2 control-label">AMOUNT</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <input type="number" class="form-control" disabled>
+                                                         <span class="input-group-addon">XLM</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="col-sm-2 control-label">PRICE</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <input type="number" class="form-control text-right" disabled>
+                                                         <span class="input-group-addon">BTC</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="col-sm-2 control-label">TOTAL</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="input-group">
+                                                         <input type="number" class="form-control text-right" disabled>
+                                                         <span class="input-group-addon">BTC</span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                 <div class="form-group" style="margin: 30px 0 0 0;">
+                                                   <button type="submit" class="btn btn-block btn-danger" style="padding: 8px 0 8px 0; font-size: 18px;">Sell</button>
+                                                </div>
+                                             </div>
+                                             <!-- /.box-body -->
+                                          </form>
+                                       </div>
+                                       <!-- /.tab-pane -->
+                                    </div>
+                                    <!-- /.tab-content -->
+                                 </div>
+                                 <!-- nav-tabs-custom -->
+                              </div>
+                              <!-- End column-3-middle-bsl for LIMIT -->
+                              <!-- column-3-middle-bsl for SELL-->
+                              <div class="column-3-right-bsl" style="height: 500px;">
                                  <table class="table table-hover" id="ask" width="100%" cellspacing="0">
                                     <thead>
                                        <tr>
@@ -582,9 +657,53 @@
                                           <td>0.1341</td>
                                           <td>0.1341</td>
                                        </tr>
+                                       <tr style="background: linear-gradient(to right, rgb(147, 46, 51) 89.7%, rgb(43, 52, 65) 89.7%);">
+                                          <td class="text-red">BUY</td>
+                                          <td>0.00003396</td>
+                                          <td>3949.866</td>
+                                          <td>0.1341</td>
+                                          <td>0.1341</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to right, rgb(147, 46, 51) 89.7%, rgb(43, 52, 65) 89.7%);">
+                                          <td class="text-red">BUY</td>
+                                          <td>0.00003396</td>
+                                          <td>3949.866</td>
+                                          <td>0.1341</td>
+                                          <td>0.1341</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to right, rgb(147, 46, 51) 89.7%, rgb(43, 52, 65) 89.7%);">
+                                          <td class="text-red">BUY</td>
+                                          <td>0.00003396</td>
+                                          <td>3949.866</td>
+                                          <td>0.1341</td>
+                                          <td>0.1341</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to right, rgb(147, 46, 51) 89.7%, rgb(43, 52, 65) 89.7%);">
+                                          <td class="text-red">BUY</td>
+                                          <td>0.00003396</td>
+                                          <td>3949.866</td>
+                                          <td>0.1341</td>
+                                          <td>0.1341</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to right, rgb(147, 46, 51) 89.7%, rgb(43, 52, 65) 89.7%);">
+                                          <td class="text-red">BUY</td>
+                                          <td>0.00003396</td>
+                                          <td>3949.866</td>
+                                          <td>0.1341</td>
+                                          <td>0.1341</td>
+                                       </tr>
+                                       <tr style="background: linear-gradient(to right, rgb(147, 46, 51) 89.7%, rgb(43, 52, 65) 89.7%);">
+                                          <td class="text-red">BUY</td>
+                                          <td>0.00003396</td>
+                                          <td>3949.866</td>
+                                          <td>0.1341</td>
+                                          <td>0.1341</td>
+                                       </tr>
                                     </tbody>
                                  </table>
                               </div>
+                              <!-- End column-3-middle-bsl for SELL-->
+                             
                               <h3 class="text-left" style="margin-bottom: 8px; padding-left: 8px;">My Opens Order</h3>
                               <!-- My Open Orders -->
                               <table class="table table-hover" id="oo" width="100%" cellspacing="0">
@@ -922,7 +1041,7 @@
       </div>
       <!-- End Tab-Content for main layout -->
       <!-- Footer -->
-      <footer class="main-footer" style="margin-left: 0;">
+      <footer class="main-footer">
          <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-3">
                <h1>ABOUT COINVIT</h1>
@@ -932,8 +1051,8 @@
             </div>
             <div class="col-md-3 col-sm-3 col-xs-3">
                <h1>SUPPORT</h1>
-               <h4><a href="#">++ Contact Support ++</a></h4>
-               <h4><a href="#">Guides</a></h4>
+               <h4><a href="contact-us.html">++ Contact Support ++</a></h4>
+               <h4><a href="contact-support.html">Guides</a></h4>
                <h4><a href="#">++ SUBMIT A TOKEN ++</a></h4>
                <h4><a href="#">REPORT Abuse</a></h4>
                <h4><a href="#">API Documentation</a></h4>
