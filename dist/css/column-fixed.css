@@ -123,12 +123,7 @@
   margin-right: 11px;
 }
 
-.column-6-header {
-  width: 185px;
-  float: left;
-  margin-left: 8px;
-  margin-right: 8px;
-}
+
 
 .column-6-right {
   width: 93px;
@@ -143,24 +138,6 @@
 /*Column 3 buy, sell, limit*/
 /* Three Column */
 
-.column-3-left-bsl {
-  width: 396px;
-  float: left;
-  margin-right: 10px;
-}
-
-.column-3-middle-bsl {
-  width: 398px;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.column-3-right-bsl {
-  width: 396px;
-  float: left;
-  margin-left: 10px;
-}
 
 /* Table Buy, Sell */
 /* Two Column */

@@ -113,17 +113,7 @@
 
 
 /* Layout for index.php */
-.left-layout{
-  float: left; 
-  width: 1250px; 
-  background-color: #fff; 
-  height: 2570px;
-}
-.right-layout{
-  float: left; 
-  width: 300px; 
-  margin-left: 5px;
-}
+
 .space-change{
   padding-top: 15px;
 }
