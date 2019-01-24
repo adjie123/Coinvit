@@ -24,66 +24,11 @@
       <link rel="stylesheet" type="text/css" href="dist/css/menu-asset.css">
       <!-- Custom Layout -->
       <link rel="stylesheet" type="text/css" href="dist/css/custom-layout.css">
+      <!-- Media Query Screen -->
+      <link rel="stylesheet" type="text/css" href="dist/css/query-screen-trade.css">
       <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
       <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-      <style type="text/css">
-         .space-upper{
-            width: 1890px;
-         }
-         .left-layout{
-           float: left; 
-           width: 1345px; 
-           background-color: #fff; 
-           height: 2570px;
-         }
-         .right-layout{
-           float: left; 
-           width: 300px; 
-           margin-left: 5px;
-         }
-
-
-         .column-3-left-bsl {
-           width: 396px;
-           float: left;
-           margin-left: 22px;
-           margin-right: 22px;
-         }
-
-         .column-3-middle-bsl {
-           width: 398px;
-           float: left;
-           margin-left: 22px;
-           margin-right: 22px;
-         }
-
-         .column-3-right-bsl {
-           width: 396px;
-           float: left;
-           margin-left: 22px;
-           margin-right: 22px;
-         }
-
-         .column-2-left-buy {
-           width: 650px;
-           float: left;
-           margin-right: 10px;
-         }
-
-         .column-2-right-sell {
-           width: 650px;
-           float: right;
-           margin-left: 10px;
-         }
-
-         .column-6-header {
-           width: 208px;
-           float: left;
-           margin-left: 8px;
-           margin-right: 8px;
-         }
-      </style>
       <!-- Google Font -->
       <link rel="stylesheet"
          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -103,23 +48,23 @@
                <ul class="nav navbar-nav navbar-right">
                   <li><a href="balance.php">Markets</a></li>
                   <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                     Centralize <span class="caret"></span>
+                     <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
+                     CEX <span class="caret"></span>
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="balances.html">Wallet</a></li>
+                        <li><a tabindex="-1" href="cex/wallet.html">Wallet</a></li>
                         <li><a tabindex="-1" href="#">Orders</a></li>
-                        <li><a tabindex="-1" href="#">History</a></li>
+                        <li><a tabindex="-1" href="transfer-history.html">History</a></li>
                      </ul>
                   </li>
                   <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                     Decentralize <span class="caret"></span>
+                     <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
+                     DEX <span class="caret"></span>
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="balances.html">Wallet</a></li>
+                        <li><a tabindex="-1" href="dex/wallet.html">Wallet</a></li>
                         <li><a tabindex="-1" href="#">Orders</a></li>
-                        <li><a tabindex="-1" href="#">History</a></li>
+                        <li><a tabindex="-1" href="transfer-history.html">History</a></li>
                      </ul>
                   </li>
                   <li>
@@ -415,7 +360,7 @@
                               <div class="row"> 
                                  <div class="column-6-header">  
                                     <img src="https://bittrexblobstorage.blob.core.windows.net/public/ddbdafb2-e267-4114-abc3-06316cf3bef9.png" width="50" height="50" class="img-logo-asset">
-                                    <h4><b>BTC-XLM</b></h4>
+                                    <h4 class="change-s"><b>BTC-XLM</b></h4>
                                     <span class="info-box-text">Lumen</span> 
                                  </div>
                                  
@@ -459,21 +404,6 @@
                            <!-- End box-header -->
                            <div class="box">
                               <div class="box-header" class="timelapse-layout">
-                                 <!--Two Column Layout-->
-                                 <div class="column-2-left">
-                                    <span>Zoom : </span>
-                                    <div class="btn-group">
-                                       <button type="button" class="btn btn-xs btn-default">12h</button>
-                                       <button type="button" class="btn btn-xs btn-default">24h</button>
-                                       <button type="button" class="btn btn-xs btn-default">2d</button>
-                                       <button type="button" class="btn btn-xs btn-default">4d</button>
-                                       <button type="button" class="btn btn-xs btn-default">1w</button>
-                                       <button type="button" class="btn btn-xs btn-default">2w</button>
-                                       <button type="button" class="btn btn-xs btn-default">1m</button>
-                                       <button type="button" class="btn btn-xs btn-default">All</button>
-                                    </div>
-                                 </div>
-                                 <!-- End column -->
                                  <div class="column-2-right">
                                     <span>Candlestick : </span>
                                     <div class="btn-group">
@@ -1219,8 +1149,8 @@
                   <div class="modal-body">
                      <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs">
-                           <li class="active"><a href="#decentralize" data-toggle="tab">Decentralize</a></li>
-                           <li><a href="#centralize" data-toggle="tab">Centralize</a></li>
+                           <li class="active"><a href="#decentralize" data-toggle="tab">DEX</a></li>
+                           <li><a href="#centralize" data-toggle="tab">CEX</a></li>
                            <li class="pull-right">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
@@ -1396,182 +1326,15 @@
    <script src="dist/js/pages/dashboard2.js"></script>
    <!-- AdminLTE for demo purposes -->
    <script src="dist/js/demo.js"></script>
-   <script type="text/javascript">
-      // DataTables
-      $(function () {
-        
-        $('#bid').DataTable({
-          'paging'      : true,
-          'searching'   : false,
-          'info'        : false,
-          'lengthChange': false,
-          'pagingType'  : 'full_numbers',
-          'responsive'  : true,
-          "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-          'autoWidth'   : false
-        })
-        $('#ask').DataTable({
-          'paging'      : true,
-          'searching'   : false,
-          'info'        : false,
-          'lengthChange': false,
-           'pagingType'  : 'full_numbers',
-          'responsive'  : true,
-          "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-          'autoWidth'   : false
-        })
-        $('#mh').DataTable({
-          'paging'      : true,
-          'searching'   : false,
-          'info'        : false,
-          'ordering'    : true,
-          'lengthChange': false,
-           'pagingType'  : 'full_numbers',
-          'responsive'  : true,
-          "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-          'autoWidth'   : false
-        })
-        $('#oo').DataTable({
-          'paging'      : true,
-          'searching'   : false,
-          'info'        : false,
-          'ordering'    : true,
-          'lengthChange': false,
-           'pagingType'  : 'full_numbers',
-          'responsive'  : true,
-          "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-          'autoWidth'   : false
-        })
-        $('#yth').DataTable({
-          'paging'      : true,
-          'searching'   : false,
-          'info'        : false,
-          'ordering'    : true,
-          'lengthChange': false,
-           'pagingType'  : 'full_numbers',
-          'responsive'  : true,
-          "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-          'autoWidth'   : false
-        })
-      
-      })
-      
-   </script>
-   <script type="text/javascript">
-      // Scroll in Sidebar Asset
-        $(function(){
-        $('#asset').slimScroll({
-          color: '#d2d6de',
-          railOpacity: 0.3,
-          width: '100%',
-          height: '56.2vh'
-        });
-      
-        $('#coin-slider').slimscroll({
-          color: '#d2d6de',
-          railOpacity: 0.3,
-          height: '40px',
-          width: '100%',
-          axis: 'x'
-        });
-
-        $('#p_key').slimScroll({
-          color: '#d2d6de',
-          railOpacity: 0.3,
-          width: '100%',
-          height: 'calc(80vh - 100px)'
-        });
-      
-      });
-   </script>
-   <script type="text/javascript">
-
-      $(".sidebar-toggle").click(function(){
-        if($("body").hasClass("sidebar-collapse")) { 
-
-         $('.left-layout').css("width", "1345px");
-         $('.right-layout').css("width", "300px");
-
-         $('.column-3-left-bsl').css("width", "396px");
-         $('.column-3-left-bsl').css("margin-left", "22px");
-         $('.column-3-left-bsl').css("margin-right", "22px");
-
-         $('.column-3-middle-bsl').css("width", "380px");
-         $('.column-3-middle-bsl').css("margin-left", "22px");
-         $('.column-3-middle-bsl').css("margin-right", "22px");
-
-         $('.column-3-right-bsl').css("width", "380px");
-         $('.column-3-right-bsl').css("margin-left", "22px");
-         $('.column-3-right-bsl').css("margin-right", "22px");
-         
-         $('.column-2-left-buy').css("width", "650px");
-         $('.column-2-right-sell').css("width", "650px");
-
-         $('.column-6-header').css("width", "208px");
-
-          $('#asset').slimScroll({
-            height: '56vh'
-         });
-
-        }else if(!$("body").hasClass("sidebar-collapse")) { 
-         
-         $('.left-layout').css("width", "1200px");
-         $('.right-layout').css("width", "300px");
-
-         $('.column-3-left-bsl').css("width", "380px");
-         $('.column-3-left-bsl').css("margin-left", "0px");
-         $('.column-3-left-bsl').css("margin-right", "0px");
-
-         $('.column-3-middle-bsl').css("width", "380px");
-         $('.column-3-middle-bsl').css("margin-left", "10px");
-         $('.column-3-middle-bsl').css("margin-right", "10px");
-
-         $('.column-3-right-bsl').css("width", "380px");
-         $('.column-3-right-bsl').css("margin-left", "0px");
-         $('.column-3-right-bsl').css("margin-right", "0px");
-         
-         $('.column-2-left-buy').css("width", "580px");
-         $('.column-2-right-sell').css("width", "580px");
-
-         $('.column-6-header').css("width", "180px");
-
-         $('#asset').slimScroll({
-            height: '70vh'
-         });
-        }
-      });
-      //Handle starring for glyphicon and font awesome
-        $("span").click(function (e) {
-          e.preventDefault();
-          //detect type
-          var $this = $(this).find("i");
-          var fa = $this.hasClass("fa");
-      
-          //Switch states
-           if (fa) {
-            $this.toggleClass("fa-star");
-            $this.toggleClass("fa-star-o");
-          }
-      
-        });
-      
-        $("li.cc").click(function (){
-          var idx = $(this).index();
-          $("li.cc").eq(idx).attr("id", "favo");
-        });
-      
-      
-        $("#fav").change(function(){
-          if (this.checked) {
-            $("li#favo").show();
-            $("li#cc").hide();
-          }else{
-            $("li#favo").show();
-            $("li#cc").show();
-          }
-      
-        });
-      
+   <!-- Effect Screen Size -->
+   <script src="dist/js/effect-trade-screen.js"></script>
+   <!-- Pagination Setup Trade -->
+   <script src="dist/js/pagination-trade.js"></script>
+   <!-- Scroll Setup List -->
+   <script src="dist/js/scroll-list-trade.js"></script>
+   <!-- Favorite Asset Trade -->
+   <script src="dist/js/fav-asset-trade.js"></script>
+    <script type="text/javascript">  
       
       
       $(document).ready(function(){

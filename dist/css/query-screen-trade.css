@@ -1,0 +1,174 @@
+ @media screen  
+           and (min-width: 1270px) 
+           and (max-width: 1280px) {
+            .space-upper{
+               width: 1500px;
+            }
+            .left-layout{
+              float: left; 
+              width: 1030px; 
+              background-color: #fff; 
+              height: 2570px;
+            }
+            .right-layout{
+              float: left; 
+              width: 200px; 
+              margin-left: 5px;
+            }
+
+            .column-6-header {
+              width: 150px;
+              float: left;
+              margin-left: 8px;
+              margin-right: 8px;
+            }
+
+            .column-3-left-bsl {
+              width: 326px;
+              float: left;
+            }
+
+            .column-3-middle-bsl {
+              width: 328px;
+              float: left;
+              margin-left: 15px;
+              margin-right: 15px;
+            }
+
+            .column-3-right-bsl {
+              width: 326px;
+              float: left;
+            }
+
+            .column-2-left-buy {
+              width: 495px;
+              float: left;
+              margin-right: 10px;
+            }
+
+            .column-2-right-sell {
+              width: 495px;
+              float: right;
+              margin-left: 10px;
+            }
+         }
+         @media screen  
+           and (min-width: 1360px) 
+           and (max-width: 1366px) {
+            .left-layout{
+              float: left; 
+              width: 1120px; 
+              background-color: #fff; 
+              height: 2570px;
+            }
+            .space-upper{
+               width: 1700px;
+            }
+            .right-layout{
+              float: left; 
+              width: 200px; 
+              margin-left: 5px;
+            }
+
+            .column-6-header {
+              width: 170px;
+              float: left;
+              margin-left: 8px;
+              margin-right: 8px;
+            }
+
+            .column-3-left-bsl {
+              width: 316px;
+              float: left;
+              margin-left: 22px;
+              margin-right: 22px;
+            }
+
+            .column-3-middle-bsl {
+              width: 318px;
+              float: left;
+              margin-left: 22px;
+              margin-right: 22px;
+            }
+
+            .column-3-right-bsl {
+              width: 316px;
+              float: left;
+              margin-left: 22px;
+              margin-right: 22px;
+            }
+
+            .column-2-left-buy {
+              width: 540px;
+              float: left;
+              margin-right: 10px;
+            }
+
+            .column-2-right-sell {
+              width: 540px;
+              float: right;
+              margin-left: 10px;
+            }
+         }
+
+         @media screen 
+           and (min-width: 1560px) 
+           and (max-width: 1600px) { 
+            .left-layout{
+              float: left; 
+              width: 1345px; 
+              background-color: #fff; 
+              height: 2570px;
+            }
+
+            .space-upper{
+               width: 1890px;
+            }
+            .right-layout{
+              float: left; 
+              width: 300px; 
+              margin-left: 5px;
+            }
+
+
+            .column-3-left-bsl {
+              width: 396px;
+              float: left;
+              margin-left: 22px;
+              margin-right: 22px;
+            }
+
+            .column-3-middle-bsl {
+              width: 398px;
+              float: left;
+              margin-left: 22px;
+              margin-right: 22px;
+            }
+
+            .column-3-right-bsl {
+              width: 396px;
+              float: left;
+              margin-left: 22px;
+              margin-right: 22px;
+            }
+
+            .column-2-left-buy {
+              width: 650px;
+              float: left;
+              margin-right: 10px;
+            }
+
+            .column-2-right-sell {
+              width: 650px;
+              float: right;
+              margin-left: 10px;
+            }
+
+            .column-6-header {
+              width: 208px;
+              float: left;
+              margin-left: 8px;
+              margin-right: 8px;
+            }
+         }
+         

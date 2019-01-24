@@ -43,7 +43,7 @@
             <!-- Navbar Right Menu -->
             <ul class="nav navbar-nav navbar-right">
                <li><a href="balance.php">Markets</a></li>
-                <li class="dropdown">
+               <li class="dropdown">
                   <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
                   CEX <span class="caret"></span>
                   </a>
@@ -86,69 +86,149 @@
       </header>
       <!-- Left side column. contains the logo and sidebar -->
       <section style="width: 100%;">
-         <div class="info-box" style="">
+         <div class="info-box">
             <div class="info-box-content" style="margin-right: 90px;">
-               <h1 style="font-weight: 300; font-size: 34px;">YOUR TRADE HISTORY</h1>
-               <div class="box box-default"  style="margin-top: 35px;">
-                  <div class="box-header with-border">
-                     <h3 class="box-title">Trade Analysis</h3>
-                     <div class="pull-right">
-                        <input type="text" name="" style="width: 5em; padding: 3px; border: 1px solid #999999;     border-radius: 4px;" placeholder="Coin"> / 
-                        <select style="width: 5em; border-radius: 4px; padding: 3px;">
-                           <option class="opt-coin">BTC</option>
-                           <option class="opt-coin">USDC</option>
-                           <option class="opt-coin">ETH</option>
-                        </select>
-                        <input type="submit" style="width: 5em; padding: 3px;" value="Analyze">
-                        <input type="submit" style="width: 5em; padding: 3px;" value="Clear">
-                     </div>
-                     <!-- /.box-tools -->
-                  </div>
-                  <!-- /.box-header -->
-                  <div class="box-body" style="">
-                     <p style="margin-top: 5px; margin-bottom: 5px;">To analyze your trades, enter a Coin name, select a Market, and click Analyze.</p>
-                     <p style="margin-top: 5px; margin-bottom: 5px;">
-                        <small style="font-size: 80%; font-style: italic;">
-                        Tip: Click a coin name in the table below to quickly analyze that coin.</small>
-                     </p>
-                  </div>
-                  <!-- /.box-body -->
-               </div>
-               <div id="date_filter" style="float: right;">
-                  <h3 style="font-size: 20px;">Date Range Filter</h3>
-                  <span id="date-label-from" class="date-label">From: </span><input class="date_range_filter date" type="text" id="datepicker_from" />
-                  <span id="date-label-to" class="date-label">To:<input class="date_range_filter date" type="text" id="datepicker_to" />
-               </div>
+               <h1 style="font-weight: 300; font-size: 34px;">YOUR TRANSFER HISTORY</h1>
                <!-- Market History -->
-               <table class="table" id="tradeHistoryTable" width="100%" cellspacing="0">
-                  <thead>
+               <table class="table table-hover" id="transferHistoryTable" width="100%" cellspacing="0">
+                  <thead class="head-column">
                      <tr>
-                        <th>MARKET</th>
-                        <th>TYPE</th>
-                        <th>CATEGORY</th>
-                        <th>PRICE/SHARE</th>
+                        <th>STATUS</th>
+                        <th>COIN</th>
                         <th>AMOUNT</th>
-                        <th>FEE</th>
-                        <th>TOTAL</th>
-                        <th>TRANSACTION DATE</th>
+                        <th>DATE</th>
                      </tr>
                   </thead>
                   <tbody>
-                     <?php
-                        for ($i=0; $i <1 ; $i++) {?> 
                      <tr>
-                        <td colspan="8">
-                           <p><b>No Results</b></p>
-                           <p>We didn't find any transactions within the specified search parameters. Try again or Clear All Filters to start over.</p>
-                        </td>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
                      </tr>
-                     <?php
-                        }
-                        ?>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
+                     <tr>
+                        <td>Completed</td>
+                        <td>BTC</td>
+                        <td>1.087666</td>
+                        <td>2019-01-21 12.00</td>
+                     </tr>
                   </tbody>
                </table>
                <!-- End Balance Table -->
-               <p class="pad">Looking for your <a href="/depositHistory" class="standard">Deposit &amp; Withdrawal History</a>?</p>
             </div>
             <!-- /.info-box-content -->
          </div>
@@ -220,12 +300,10 @@
    <!-- DataTables -->
    <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
    <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-   <!-- Jquery UI -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
    <!-- AdminLTE App -->
    <script src="dist/js/adminlte.min.js"></script>
-   <!-- SlimScroll -->
-   <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+   <!-- SlimScroll Vertical-->
+   <script src="bower_components/jquery-slimscroll/vertical/jquery.slimscroll.min.js"></script>
    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
    <script src="dist/js/pages/dashboard2.js"></script>
    <!-- AdminLTE for demo purposes -->
@@ -233,78 +311,19 @@
    <script type="text/javascript">
       $(function () {
        
-       $('#tradeHistoryTable').DataTable({
-         'paging'      : false,
-         "aLengthMenu": [[25, 50, 75, -1], ["Buys & Sells", "Buys Only", "Sells Only", "Loan Earning"]].,
-         'searching'   : true,
-         'info'        : false,
-         'lengthChange': true,
-         'pagingType'  : 'full_numbers',
-         'responsive'  : true,
-         "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-         'autoWidth'   : false
-       })
+        $('#transferHistoryTable').DataTable({
+          'paging'      : true,
+          'searching'   : false,
+          'info'        : false,
+          'ordering'    : true,
+          'lengthChange': false,
+           'pagingType'  : 'full_numbers',
+          'responsive'  : true,
+          "dom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+          'autoWidth'   : false
+        })
       })
       
-      $(function() {
-      var oTable = $('#tradeHistoryTable').DataTable({
-       "oLanguage": {
-         "sSearch": "Filter Data"
-       },
-       "iDisplayLength": -1,
-       "sPaginationType": "full_numbers",
       
-      });
-      
-      
-      
-      
-      $("#datepicker_from").datepicker({
-       "onSelect": function(date) {
-         minDateFilter = new Date(date).getTime();
-         oTable.fnDraw();
-       }
-      }).keyup(function() {
-       minDateFilter = new Date(this.value).getTime();
-       oTable.fnDraw();
-      });
-      
-      $("#datepicker_to").datepicker({
-       "onSelect": function(date) {
-         maxDateFilter = new Date(date).getTime();
-         oTable.fnDraw();
-       }
-      }).keyup(function() {
-       maxDateFilter = new Date(this.value).getTime();
-       oTable.fnDraw();
-      });
-      
-      });
-      
-      // Date range filter
-      minDateFilter = "";
-      maxDateFilter = "";
-      
-      $.fn.dataTableExt.afnFiltering.push(
-      function(oSettings, aData, iDataIndex) {
-       if (typeof aData._date == 'undefined') {
-         aData._date = new Date(aData[0]).getTime();
-       }
-      
-       if (minDateFilter && !isNaN(minDateFilter)) {
-         if (aData._date < minDateFilter) {
-           return false;
-         }
-       }
-      
-       if (maxDateFilter && !isNaN(maxDateFilter)) {
-         if (aData._date > maxDateFilter) {
-           return false;
-         }
-       }
-      
-       return true;
-      }
-      );
    </script>
 </html>
